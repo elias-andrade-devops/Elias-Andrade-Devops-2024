@@ -33,7 +33,7 @@ Let's Connect!
 
 📧 Email: atak.elias@gmail.com
 
-🔗 LinkedIn: [linkedin.com/seu-perfil](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
+🔗 LinkedIn: [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
 
 🐦 Twitter: @elias_atak
 
