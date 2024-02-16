@@ -35,6 +35,6 @@ Let's Connect!
 
 🔗 LinkedIn: [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
 
-🐦 Twitter: @elias_atak
+🐦 Twitter: @Elias_devops
 
 Vamos juntos impulsionar a infraestrutura para novos patamares de excelência! 🚀🔥
