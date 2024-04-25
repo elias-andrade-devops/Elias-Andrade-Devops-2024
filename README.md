@@ -3,6 +3,12 @@
 ## Sobre Mim
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
+### Outras áreas que atuo, estudo, tenho interesse ou projetos.
+
+#### [Evolução IT - Portfolio](https://github.com/evolucaoit/portfolio) 🚀
+Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Navegue pelo projeto para descobrir suas realizações e contribuições nesta emocionante área da tecnologia.
+#### [Certificações e Conquistas - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
+Este repositório abriga o portfólio de certificações e conquistas de Elias Andrade, destacando suas habilidades e experiência como administrador de redes e analista de infraestrutura. Explore para ver suas certificações e conquistas profissionais.
 
 ## Habilidades
 
