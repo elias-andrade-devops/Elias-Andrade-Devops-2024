@@ -60,6 +60,23 @@
 - 📄 **Roteiro de Upgrade:** [Roteiro de Upgrade do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/acompanhamento%20atualizacao%20gitlab.txt)
 - 📄 **Comandos Completos de Instalação:** [Comandos de Instalação do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/comando%20atualizado%20instala%C3%A7%C3%A3o%20gitlab%20pacotes%20rp.txt)
 
+### 📚📝🔍 Elias Andrade - Acumulador de Conhecimento e Documentador 🚀
+
+Gosto de acumular conhecimento, documentar minhas descobertas e manter meu próprio repositório de conhecimento para referência futura. Aqui estão alguns dos meus documentos:
+
+#### Ubuntu:
+- [Manual de Hardening para Linux Ubuntu](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/ubuntu/manual_hardening_linux_ubuntu.txt) 🔒
+
+- [Configuração de Firewall para Ubuntu](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/ubuntu/configuracao_firewall_ubuntu.txt) 🛡️
+
+#### Docker:
+- [Gestão de Containers no Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/docker/gestao_containers_docker.txt) 🐳
+
+- [Comandos Docker Avançados](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/docker/comandos_docker_avancados.txt) ⚙️
+
+- [Lista de Comandos Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/docker/comandos-docker.txt) 💻
+
+
 ### Exemplo de Comando de Upgrade do Ruby
 
 - 🔧 **Descrição:** Exemplo de comando para atualização do Ruby de 2.7 para 3.0 em ambientes CentOS.
