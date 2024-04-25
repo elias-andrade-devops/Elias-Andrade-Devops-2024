@@ -6,9 +6,9 @@
 ### Outras áreas que atuo, estudo, tenho interesse ou projetos.
 
 #### [Visão computacional e NLP = processamento de linguagem natural, llama3, gpt, berd. Chatbots e IA - Portfolio](https://github.com/evolucaoit/portfolio) 🚀
-Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Navegue pelo projeto para descobrir suas realizações e contribuições nesta emocionante área da tecnologia.
+Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Saiba mais sobre meus conhecimentos nessa área.
 #### [Portfólio e jornada analista de redes e infraestrutura - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
-Este repositório abriga o portfólio de certificações e conquistas de Elias Andrade, destacando suas habilidades e experiência como administrador de redes e analista de infraestrutura. Explore para ver suas certificações e conquistas profissionais.
+Este repositório abriga o portfólio de realizações, projetos, experiência e conquistas, destacando minhas habilidades em projetos e experiência como administrador de redes e analista de infraestrutura. Saiba mais sobre meus conhecimentos nessa área.
 
 ## Habilidades
 
