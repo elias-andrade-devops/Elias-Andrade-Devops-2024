@@ -48,9 +48,7 @@
 - 📄 **Acompanhamento Detalhado:** [Registro de Atualização do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/acompanhamento%20atualizacao%20gitlab%20(2).txt)
 - 🔍 **Arquivos Relevantes:**
   - [Procedimento de Upgrade do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/UPGRADING%20REDMINE%20EM%20PRODU%C3%87%C3%83O.txt)
-  - [Imagem Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/_c1e10193-4300-4a4d-99ac-697e7383c809.jpg)
   - [Certificado de Treinamento em LGPD](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/UC-5a0ef873-72db-4632-b593-8b53674122e0.jpg)
-  - 📷 **Foto de Celular:** ![Chat GPT](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chat-gpt-para-empresas-heading.jpg)
   - 📄 **Relatório de Validação do Tempo de Atualização:** [Relatório de Validação](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/d2d26117-4d0a-4ba7-84ed-4a5d90f095af_Relatrio_d.pdf)
 
 ### Roteiro de Upgrade do GitLab
