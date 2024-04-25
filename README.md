@@ -1,4 +1,4 @@
-🚀 Analista de Infra DevOps na Atak Sistemas 🛠️
+🚀 Analista de Infra DevOps 🛠️
 
 👨‍💻 Focado em Windows, Linux, Docker, GitLab, PowerShell e mais!
 
