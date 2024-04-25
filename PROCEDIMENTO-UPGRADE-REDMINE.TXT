@@ -1,0 +1,404 @@
+logins root
+
+root
+SENHA-ROOT
+
+--
+
+caminhos pastas do redmine
+
+sudo find / -type d -name "redmine"
+
+
+/var/lib/mysql/redmine
+/var/www/html/redmine
+/var/www/html/redmine/lib/redmine
+/var/www/html/redmine/test/unit/lib/redmine
+/var/www/html/redmine/test/integration/lib/redmine
+--
+
+encontrar config o banco de dados do redmine
+
+sudo find / -type f -name "database.yml"
+
+/var/www/html/redmine/lib/plugins/acts_as_tree/test/database.yml
+/var/www/html/redmine/lib/plugins/awesome_nested_set/test/db/database.yml
+/var/www/html/redmine/lib/plugins/awesome_nested_set/spec/db/database.yml
+/var/www/html/redmine/lib/plugins/acts_as_versioned/test/database.yml
+/var/www/html/redmine/config/database.yml
+/usr/local/share/gems/gems/ruby-openid-2.1.8/examples/rails_openid/config/database.yml
+/usr/local/share/gems/gems/railties-3.2.11/guides/code/getting_started/config/database.yml
+
+
+--
+
+backup do arquivo de configuração do redmine
+sudo find / -type f -name "configuration.yml"
+
+/var/www/html/redmine/config/configuration.yml
+
+
+--
+
+fazer um backup inteiro da pasta www exceto a pasta files do redmine (14gb)
+sudo tar -czvf /var/www/backup-completo-redmine.tar.gz --exclude=/var/www/html/redmine/files /var/www
+criado um backup completo backup-completo-redmine.tar.gz
+enviado o backup para o documentos do notebook
+salvo no notebook uma copia solta do config e do database yml
+
+--
+
+salvo o historico completo de comandos executados no servidor pra replicação ou consulta
+
+--
+
+
+confirmado que o banco é mysql mariadb Server version: 5.5.50-MariaDB MariaDB Server - 
+
+fazer backup do banco na pasta www
+
+mysqldump -u redmine -p'r3dm1n3' redmine > /var/www/backup_banco_redmine.sql
+usuario nao tem permissão
+
+--
+
+renomeado a pasta redmine em www html para redmine-old
+
+
+procedendo com o download da nova versão
+
+baixado de https://www.redmine.org/releases/redmine-5.1.1.zip
+
+extraido para a pasta redmine
+unzip redmine-5.1.1.zip -d redmine
+
+--
+
+validar versão do rails - rails -v
+
+a versão atual é Rails 3.2.11
+a versão minima exigida é Rails 6.1
+
+validar versão do ruby ruby 2.0.0p598 (2014-11-13) [x86_64-linux]
+versão exigida é Ruby 2.71, 3.0, 3.1, 3.2
+
+
+até aqui ok
+
+>>>>>>
+
+--
+instalar o rails 6.1
+gem install rails -v 6.1
+gem 'rails', '6.1'
+bundle update
+
+
+ERROR:  Error installing rails:
+        concurrent-ruby requires Ruby version >= 2.3.
+
+--
+
+rake db:migrate RAILS_ENV=production
+rake redmine:plugins:migrate RAILS_ENV=production
+rake tmp:cache:clear tmp:sessions:clear RAILS_ENV=production
+
+
+rails -v
+
+
+--
+
+
+>>>>
+
+tentar upgrade do ruby para 2.7 para fazer o upgrade do rails para 6.1 para voltar ao passo anterior
+
+instalação do ruby 2.7
+
+sudo yum install -y git gcc openssl-devel readline-devel zlib-devel
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+
+rbenv install 2.7.0
+
+
+rbenv global 2.7.0
+
+
+gem install rails
+
+
+--
+
+da erro de dependencia 
+
+ERROR:  Error installing rails:
+        The last version of nokogiri (>= 1.8.5) to support your Ruby & RubyGems was 1.15.5. Try installing it with `gem install nokogiri -v 1.15.5` and then running the current command again
+        nokogiri requires Ruby version >= 3.0, < 3.4.dev. The current ruby version is 2.7.0.0.
+
+
+--
+instalar a versão compativel com o ruby 7
+
+gem install nokogiri -v 1.10.10
+
+
+--
+
+repetir gem install rails
+
+gem install rails
+
+--
+segue dando erroe
+
+executando gem install nokogiri -v 1.15.5
+
+
+--
+
+repetindo...
+
+gem install rails
+
+--
+
+ERROR:  Error installing rails:
+        The last version of net-imap (>= 0) to support your Ruby & RubyGems was 0.3.7. Try installing it with `gem install net-imap -v 0.3.7` and then running the current command again
+        net-imap requires Ruby version >= 2.7.3. The current ruby version is 2.7.0.0.
+
+
+--
+
+instalar o pacote que está sendo pedido 
+
+gem install net-imap -v 0.3.7
+
+passou ok
+
+executar novamente o install rails
+
+gem install rails
+--
+
+comando executado ok...
+
+--
+
+dar upgrade no rails
+
+gem install rails -v 6.1
+
+da um erro e pede o comando bundle install 
+--
+executando novamente  na pasta do redmine 
+
+bundle install
+
+--
+executar novamente a instalação do rails 
+
+gem install rails -v 6.1
+
+--
+
+da um erro e pede a rom pg 
+
+instalar via 
+
+gem install pg -v '1.5.4' --source 'https://rubygems.org/'
+
+pede para antes isntalar 
+
+sudo apt install libpq-dev
+sudo yum install postgresql-devel
+sudo zypper in postgresql-devel
+sudo pacman -S postgresql-libs
+
+
+---
+
+executando novamente  a instalação da gem pg
+
+gem install pg -v '1.5.4' --source 'https://rubygems.org/'
+
+da um erro de que a versão do postgres e´antiga pede upgrade da versão do postgres para 9.3 ou superior
+
+--
+consulta versão do postgres
+psql --version
+
+
+(PostgreSQL) 9.2.24
+
+
+--
+
+
+tentando executar o comando bundle sem a gem pg
+
+bundle install --without postgresql
+
+
+--
+
+ir no arquivo Gemfile na pasta do redmine e comentar as linhas que se referem a gem PG
+
+--
+
+passou!!!
+
+voltando ao passo anterior 
+
+>>>>>>
+
+executando novamente  na pasta do redmine 
+
+bundle install
+
+--
+tentando novamente  executar novamente a instalação do rails 
+
+gem install rails -v 6.1
+
+>>>>>>
+
+instalado com sucesso
+
+--
+
+validar o ambiente a versão do rails e do ruby
+
+--
+
+ruby -v
+
+
+rails -v
+
+
+
+versões ok
+
+--
+
+aqui foi criado um snapshop
+
+--
+
+agora executar um bundle update e um bundle install
+
+bundle update
+
+bundle install
+
+- 100 % até o momento..
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+--
+
+iniciando procedimentos de rake dos arquivos
+
+Ainda falta a instalação do bundler
+gem install bundler -v 2.4.22
+gem install bundler
+
+
+---
+
+
+bundle config set --local without 'development test' 
+bundle install
+
+bundle exec rake generate_secret_token
+
+mkdir -p tmp tmp/pdf public/plugin_assets
+sudo chown -R redmine:redmine files log tmp public/plugin_assets
+sudo chmod -R 755 files log tmp public/plugin_assets
+
+bundle exec rails server -e production
+
+
+
+^^^^^^^comandos acima é da documentação oficinal
+
+separados squi os mesmo comandos:
+
+bundle config set --local without 'development test'
+
+
+bundle install
+
+
+bundle exec rake generate_secret_token
+
+
+mkdir -p tmp tmp/pdf public/plugin_assets
+
+
+sudo chown -R redmine:redmine files log tmp public/plugin_assets
+sudo chmod -R 755 files log tmp public/plugin_assets
+
+
+bundle exec rails server -e production
+
+
+---
+da um erro nao cai na tela de logins
+executando comandos adicionais
+
+RAILS_ENV=production bundle exec rake redmine:plugins:migrate
+
+
+RAILS_ENV=production bundle exec rake assets:clean
+RAILS_ENV=production bundle exec rake assets:precompile
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+comandos rakes adicionais 
+RAILS_ENV=production bundle exec rake redmine:assets:clean
+RAILS_ENV=production bundle exec rake redmine:assets:compile
+
+bundle exec rake redmine:assets:clean
+bundle exec rake redmine:assets:compile
+
+
+--
+
+validar...
+nao loga, da erro, mas sobe a interface web
+
+
+nesse momento está dando um erro e falta pois eu nao fiz o migrate do banco
+--
+esse é o passo 6 - executando ok, rodando as querys 
+RAILS_ENV=production bundle exec rake db:migrate
+
+--
+
+depois tem um passo 7 do procedimento oficial..
+
+RAILS_ENV=production bundle exec rake redmine:load_default_data
+
+--
+
+validar....
+comando sobe o serviço do redmine
+bundle exec rails server -e production
+
+--
+
+validado, logando ok, perfeitamente ok
+--
+
