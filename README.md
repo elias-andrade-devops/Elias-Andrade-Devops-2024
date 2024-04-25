@@ -6,12 +6,6 @@
 ## Sobre Mim
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
-### Outras áreas que atuo, estudo, tenho interesse ou projetos.
-
-#### [Visão computacional e NLP = processamento de linguagem natural, llama3, gpt, berd. Chatbots e IA - Portfolio](https://github.com/evolucaoit/portfolio) 🚀
-Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Saiba mais sobre meus conhecimentos nessa área.
-#### [Portfólio e jornada analista de redes e infraestrutura - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
-Este repositório abriga o portfólio de realizações, projetos, experiência e conquistas, destacando minhas habilidades em projetos e experiência como administrador de redes e analista de infraestrutura. Saiba mais sobre meus conhecimentos nessa área.
 
 ## Habilidades
 
@@ -93,6 +87,12 @@ Este repositório abriga o portfólio de realizações, projetos, experiência e
 
 
 ## Let's Connect!
+### Outras áreas que atuo, estudo, tenho interesse ou projetos.
+
+#### [Visão computacional e NLP = processamento de linguagem natural, llama3, gpt, berd. Chatbots e IA - Portfolio](https://github.com/evolucaoit/portfolio) 🚀
+Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Saiba mais sobre meus conhecimentos nessa área.
+#### [Portfólio e jornada analista de redes e infraestrutura - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
+Este repositório abriga o portfólio de realizações, projetos, experiência e conquistas, destacando minhas habilidades em projetos e experiência como administrador de redes e analista de infraestrutura. Saiba mais sobre meus conhecimentos nessa área.
 
 - 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
 - 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
