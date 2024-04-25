@@ -123,8 +123,6 @@ Neste repositório, você encontrará uma coleção de materiais relacionados a 
 - **[Lista de Comandos Docker (MD)](https://github.com/chaos4455/Devops-2024/blob/main/LISTA-COMANDOS-DOCKER-1.MD)**
 - **[Tutorial Completo de Gerenciamento de Repositórios Git (PDF)](https://github.com/chaos4455/Devops-2024/blob/main/Tutorial%20Completo%20Gerenciamento%20de%20Reposit%C3%B3rios%20Git.pdf)**
 
-Este repositório será atualizado regularmente com novos materiais e aprimoramentos. Sinta-se à vontade para contribuir com seus próprios scripts, procedimentos e manuais ou sugerir melhorias para os existentes.
-
 ### Exemplo de Comando de Upgrade do Ruby
 
 - 🔧 **Descrição:** Exemplo de comando para atualização do Ruby de 2.7 para 3.0 em ambientes CentOS.
@@ -151,7 +149,32 @@ Este repositório será atualizado regularmente com novos materiais e aprimorame
 - 📷 **Diagrama:** ![Diagrama Profissão Engenheiro de Plataforma](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/maxresdefault.jpg)
 
 
-## Let's Connect!
+### Outros repositórios mais antigos de quando comecei meus estudos em devops no ano de 2018
+
+### 🐳📚 Elias Andrade - Repositório Docker Commandlets 2018 🚀
+
+Em 2018, iniciei meus estudos com Docker e comecei a explorar as possibilidades oferecidas por essa tecnologia. O repositório `DockerCommandlets` foi o ponto de partida para minha jornada de aprendizado com Docker.
+
+#### Sobre o Repositório
+O [DockerCommandlets](https://github.com/chaos4455/DockerCommandlets) é um repositório onde comecei a reunir comandos, scripts e materiais de estudo relacionados ao Docker. Foi aqui que mergulhei no mundo dos contêineres e comecei a experimentar com diferentes funcionalidades e casos de uso do Docker.
+
+### 📚🔍 Elias Andrade - Repositório de Conhecimento 2022 🚀
+
+Em 2019, criei o repositório [Conhecimento](https://github.com/chaos4455/Conhecimento) com o objetivo de compartilhar um misto de cultura DevOps e outras informações úteis acumuladas ao longo dos anos. Este repositório contém uma variedade de comandos, tutoriais, arquivos de informação e comandlets que uso no meu dia a dia e que foram acumulados ao longo do tempo.
+
+#### Sobre o Repositório
+O repositório de Conhecimento é uma coleção de recursos úteis compartilhados com a comunidade por Elias Andrade. Ele inclui uma variedade de tópicos, desde comandos de linha de comando até tutoriais detalhados sobre diversas tecnologias.
+
+#### Objetivo
+Meu objetivo ao criar este repositório foi tornar fácil o acesso aos arquivos que considero úteis para mim e para outras pessoas. Aqui, você encontrará uma grande variedade de informações destinadas a facilitar o trabalho diário e promover o compartilhamento de conhecimento.
+
+#### Conteúdo
+- Comandos úteis para diversas tarefas de administração de sistemas.
+- Tutoriais detalhados sobre configuração e uso de diferentes tecnologias.
+- Arquivos de informação para referência rápida.
+- Comandlets e scripts para automação de tarefas comuns.
+
+
 ### Outras áreas que atuo, estudo, tenho interesse ou projetos.
 
 #### [Visão computacional e NLP = processamento de linguagem natural, llama3, gpt, berd. Chatbots e IA - Portfolio](https://github.com/evolucaoit/portfolio) 🚀
@@ -159,6 +182,9 @@ Um repositório contendo o portfólio de Elias Andrade, especialista em Visão C
 #### [Portfólio e jornada analista de redes e infraestrutura - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
 Este repositório abriga o portfólio de realizações, projetos, experiência e conquistas, destacando minhas habilidades em projetos e experiência como administrador de redes e analista de infraestrutura. Saiba mais sobre meus conhecimentos nessa área.
 
+
+
+## Let's Connect!
 - 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
 - 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
 - 🐦 **Twitter:** [@Elias_devops](https://twitter.com/Elias_devops)
