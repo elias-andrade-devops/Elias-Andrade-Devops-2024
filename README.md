@@ -37,36 +37,6 @@
 
 - 🛠️ **Descrição:** Coordenação e execução da atualização do GitLab de versões legadas 12 e 14 em dois servidores de produção em uma software house com 200 colaboradores.
 - 📄 **Acompanhamento Detalhado:** [Registro de Atualização do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/acompanhamento%20atualizacao%20gitlab.txt)
-- 📷 **Relatório de Validação do Tempo de Atualização:** ![Relatório de Validação](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/d2d26117-4d0a-4ba7-84ed-4a5d90f095af_Relatrio_d.pdf)
-- 📱 **Foto de Celular:** ![Chat GPT](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chat-gpt-para-empresas-heading.jpg)
-
-### Roteiro de Upgrade do GitLab
-
-- 📋 **Descrição:** Roteiro detalhado para a atualização do GitLab em um ambiente de produção, incluindo comandos completos para instalação das versões específicas.
-- 📄 **Roteiro de Upgrade:** [Roteiro de Upgrade do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/acompanhamento%20atualizacao%20gitlab.txt)
-- 💻 **Comandos Completos de Instalação:** [Comandos de Instalação do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/comando%20atualizado%20instala%C3%A7%C3%A3o%20gitlab%20pacotes%20rp.txt)
-
-### Exemplo de Comando de Upgrade do Ruby
-
-- 🔧 **Descrição:** Exemplo de comando para atualização do Ruby de 2.7 para 3.0 em ambientes CentOS.
-- 📄 **Comando de Upgrade do Ruby:** [Comando de Upgrade do Ruby](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/comando%20atualiza%C3%A7%C3%A3o%20ruby%20de%202-7%20para%203%20mais%20upd.txt)
-
-### Conexão com o PostgreSQL
-
-- 🐘 **Descrição:** Comandos para conectar e configurar o PostgreSQL 10 em ambientes CentOS.
-- 📄 **Comandos PostgreSQL:** [Comando de Conexão com o PostgreSQL](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/comando%20conecta%20postgres%2010%20centos%207.txt)
-
-### Configuração do GitLab
-
-- ⚙️ **Descrição:** Comandos para configurar o GitLab em ambientes CentOS.
-- 📄 **Comandos de Configuração:** [Comando de Configuração do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/comando%20configura%C3%A7%C3%A3o%20gitlab%20centos.txt)
-
-## Projetos Destacados
-
-### Atualização do GitLab em Ambiente de Produção
-
-- 🛠️ **Descrição:** Coordenação e execução da atualização do GitLab de versões legadas 12 e 14 em dois servidores de produção em uma software house com 200 colaboradores.
-- 📄 **Acompanhamento Detalhado:** [Registro de Atualização do GitLab](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/acompanhamento%20atualizacao%20gitlab.txt)
 - 📷 **Foto de Celular:** ![Chat GPT](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chat-gpt-para-empresas-heading.jpg)
 - 📄 **Relatório de Validação do Tempo de Atualização:** [Relatório de Validação](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/d2d26117-4d0a-4ba7-84ed-4a5d90f095af_Relatrio_d.pdf)
 
@@ -100,6 +70,7 @@
 ### Diagrama Profissão Engenheiro de Plataforma
 
 - 📷 **Diagrama:** ![Diagrama Profissão Engenheiro de Plataforma](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/maxresdefault.jpg)
+
 
 ## Let's Connect!
 
