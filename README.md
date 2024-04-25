@@ -1,5 +1,8 @@
 # Portfolio de Elias Andrade - Analista de Infra DevOps 🚀
 
+![Elias Andrade - Profile Picture](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_kpuiYlsq9Q.png)
+
+
 ## Sobre Mim
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
