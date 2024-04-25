@@ -41,10 +41,6 @@
   - [Diagrama de Ferramentas DevOps](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/63bd77fd98f7595075546699_platform-tooling-lands.jpg)
   - [Comandos para Configuração de Rede no CentOS](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/COMANDOS%20REDE%20CENTOS%20DHCP%20CENTOS%207%20E%208%20.txt)
   - [Manual de Gestão de Redes no CentOS](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/0be98428-ae96-4465-b50a-7aaec4485f66__Manual_av.pdf)
-  - [Imagem do Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/0_wfn3dOw9DyQY_rF3.png)
-  - [Imagem de Arte DevOps](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/0bbf6cb04a342a48.jpg)
-  - [Logo Red Hat](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/1019_RH_OBP_Outro_CC_Black_SFX%20copy_0.jpg)
-  - [Logotipo DevOps Loop](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/DevOps%20loop%20tool%20image.png)
 
 ### Atualização do GitLab em Ambiente de Produção
 
