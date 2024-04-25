@@ -1,0 +1,2 @@
+# Instala todas as dependências do PostgreSQL
+sudo yum install postgresql-libs postgresql-contrib postgresql postgresql-devel -y

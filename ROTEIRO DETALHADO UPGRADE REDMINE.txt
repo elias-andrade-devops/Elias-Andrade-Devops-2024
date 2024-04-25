@@ -1,0 +1,61 @@
+Redmine upgrade to Easy
+This guide applies to those who have installed Redmine and want to upgrade to Easy Redmine. The same steps are also used to install updates on existing Easy Redmine. This guide instructs you how to use Redmine Installer gem in order to upgrade your Redmine.
+
+0) Before you start
+Please make sure you have proper hardware and software server configuration as described here. The following conditions must be complied:
+
+The webserver must have FULL access to public, files, log, tmp folders => DO NOT RUN REDMINE INSTALLER UNDER ROOT!
+Webrick web server is NOT supported
+Easy Redmine plugins go to [redmine_root]/plugins/easyproject/easy_plugins
+The upgrade procedure contains migration of text formatting. If you used Textile or Markdown text editing (which are standard in Redmine, and which were available until Easy Redmine version 10), the texts will be converted to HTML supported by CKEditor 5. Some features (such as "toc") will be removed.
+The installation does NOT set-up CRON automatically - you need to do it manually
+For correct running of the Redmine installer, at least 250 MB is required free on the root disc
+Server must have unrestricted internet connection, at least during the installation
+Redmine can not contain any third party plugins or modifications. More in point 2.1 of installation terms
+Before updating existing Easy Redmine, check the content of plugin folders in your current installation and in the update package (/plugins and /plugins/easyproject/easy_plugins). If the update package is missing some plugins which are in the current installation, please write to support to find out why and to get the correct package. Or just uninstall the excessive plugins from your system
+There is also a detailed installation manual available directly in the package in doc/INSTALL
+
+1) Redmine Installer Ruby Gem
+First, you need to install Redmine installer Ruby Gem.  To install the gem use:
+
+$ gem install redmine-installer
+
+(Or gem update redmine-installer to update existing gem to the latest version.)
+
+When the installer gem is installed/updated in your Ruby, you can start with the upgrade.
+
+Request Installer download!
+
+2) Upgrade of existing Redmine instance
+Redmine Installer can upgrade your existing Redmine from archive or git repository. Installed plugins are kept or upgraded if the new package contains them.
+
+Upgrade procedure can be saved in a profile for the next upgrade. Profiles are stored in HOME_FOLDER/.redmine-installer-profiles.yml
+
+Command for upgrade:
+
+redmine upgrade [PATH_TO_PACKAGE] [REDMINE_ROOT]
+
+Upgrade wizard takes you through following steps:
+
+1) Redmine Root - define where your Redmine is installed (if you have not already included it in the command)
+2) Loading package - loading package to the temporary folder
+3) Validation of current Redmine
+4) Backup - full / configuration + database / only database
+5) Upgrading - upgrade commands are executed
+6) Moving Redmine - current Redmine get upgraded with new files
+7) Profile saving - upgrade procedure is saved for future use
+
+Command for Redmine Upgrade - from archive
+redmine upgrade [PATH_TO_PACKAGE] [REDMINE_ROOT]
+
+Example
+
+redmine upgrade easyredmine_2016_stable_u11271_v2018_1_2__platform_04_00.zip /home/easy/current
+
+Command for Redmine Upgrade - from profile
+redmine upgrade [PACKAGE] [REDMINE_ROOT] --profile PROFILE_ID
+
+Upgrading with custom modifications
+If you are using easyproject plugin and you don't want to copy the client modifications from old instance use switch
+
+--skip-old-modifications

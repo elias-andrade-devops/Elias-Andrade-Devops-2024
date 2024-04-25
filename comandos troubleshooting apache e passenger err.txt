@@ -1,0 +1,36 @@
+
+
+export ORIG_PATH="$PATH"
+sudo -s -E
+export PATH="$ORIG_PATH"
+/opt/rh/rh-ruby24/root/usr/bin/ruby /opt/rh/rh-ruby24/root/usr/local/share/gems/gems/passenger-6.0.20/bin/passenger-config --detect-apache2
+
+
+gem install passenger -v 6.0.20
+passenger-install-apache2-module
+
+reinstalar 
+
+sudo yum reinstall httpd
+
+
+resetar
+
+
+systemctl restart httpd
+systemctl status httpd
+
+contultar logs e status completo 
+
+
+/usr/sbin/apachectl -t
+
+
+
+--
+
+comando instala passenger
+
+gem install passenger -v 5.3.7
+passenger-install-apache2-module
+

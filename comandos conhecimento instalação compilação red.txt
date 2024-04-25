@@ -1,0 +1,267 @@
+após instalar a gem pg que dependia do pg devel
+agora está dando um erro na gem gem install nokogiri -v 1.10.10
+
+a gem foi instalada compativel com o ruby 2.7 porém ela pede o ruby 3 para executar os comandos abaixo
+
+--
+continua nao compilando...
+tentar atualizar o ruby pra 3 
+
+comandos a serem executados 
+
+bundle install
+bundle exec rake generate_secret_token
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+
+--
+
+Para compilar os arquivos do Redmine, você pode executar os seguintes comandos na raiz do diretório do seu projeto Redmine:
+
+Gerar o token secreto:
+
+bundle exec rake generate_secret_token
+Migrar o banco de dados:
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+Carregar os dados padrão do Redmine:
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+Pré-compilar os ativos (JavaScript, CSS, etc.):
+
+RAILS_ENV=production bundle exec rake assets:precompile
+Certifique-se de ter instalado todas as gemas necessárias do Redmine e que o ambiente está configurado corretamente antes de executar esses comandos. Certifique-se também de estar no diretório correto do seu projeto Redmine ao executar esses comandos.
+
+
+--
+
+
+define variaveis de ambiente
+export RAILS_ENV=production
+
+export REDMINE_LANG=en
+
+
+--
+
+comandos com variaveis
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake generate_secret_token
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+
+--
+
+atualizar o ruby para 3 resolveu o erro do nokogiri mas começou das outros erros
+
+--
+
+agora começou dar o seguinte erro:
+(in /home/atak/redmine/redmine-4.2.0)
+rake aborted!
+NoMethodError: undefined method `represent_boolean_as_integer=' for nil:NilClass
+/home/atak/redmine/redmine-4.2.0/config/application.rb:60:in `<class:Application>'
+/home/atak/redmine/redmine-4.2.0/config/application.rb:24:in `<module:RedmineApp>'
+/home/atak/redmine/redmine-4.2.0/config/application.rb:20:in `<top (required)>'
+<internal:/usr/local/rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/usr/local/rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+/home/atak/redmine/redmine-4.2.0/Rakefile:5:in `<top (required)>'
+/usr/local/rvm/gems/ruby-3.0.0/gems/rake-13.1.0/exe/rake:27:in `<top (required)>'
+/usr/local/rvm/gems/ruby-3.0.0/bin/ruby_executable_hooks:22:in `eval'
+/usr/local/rvm/gems/ruby-3.0.0/bin/ruby_executable_hooks:22:in `<main>'
+(See full trace by running task with --trace)
+
+
+--
+
+o erro está referido no arquivo     # Since Redmine 4.0, boolean values are stored in sqlite3 databases as 1 and 0
+    config.active_record.sqlite3.represent_boolean_as_integer = true
+ conforme :
+ 
+ Verifique o código no arquivo /home/atak/redmine/redmine-4.2.0/config/application.rb na linha 60, 
+ onde o método represent_boolean_as_integer está sendo chamado. 
+ Verifique se há alguma referência a esse método e se é possível que o objeto que está chamando o método esteja sendo criado corretamente.
+ 
+ --
+ a sugestão do problema é comentar essa linha
+ --
+ 
+ agora executou o secret token ok
+ RAILS_ENV=production REDMINE_LANG=en bundle exec rake generate_secret_token
+ 
+ voltando executar os demais comandos..
+ 
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake generate_secret_token
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+
+--
+ agora está dando o seguinte erro
+ 
+ Gem::LoadError: pg is not part of the bundle. Add it to your Gemfile.
+
+
+--
+editar o arquivo gemfile e adicionar
+nano Gemfile
+
+
+# Use postgresql as the database for Active Record
+gem 'pg'
+
+
+--
+
+bundle install
+
+
+--
+
+está dando algum erro ainda na gem pg
+
+--
+
+comando para instalar o pg apontando config
+gem install pg -- --with-pg-config=/usr/pgsql-13/bin/pg_config
+
+
+--
+
+gem install pg -- --with-pg-include=/usr/local/pgsql/include --with-pg-lib=/usr/local/pgsql/lib
+
+
+--
+esse comando instala novamente o pg e reconfigurada a gem pg necessaria para a etapa de banco
+gem install pg -- --with-pg-include=/usr/local/pgsql/include --with-pg-lib=/usr/local/pgsql/lib
+--
+
+bundle update
+
+voltando executar os programas
+
+bundle update
+--
+
+
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake generate_secret_token
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+--
+agora deu outro erro precisa de gem install ruby-openid
+
+executar gem install ruby-openid
+
+
+-
+
+instalado o pg gem install pg -v '1.5.4' -- --with-pg-config=/usr/local/pgsql/bin/pg_config
+
+
+gem install pg -v '1.5.4' -- --with-pg-config=/usr/local/pgsql/bin/pg_config
+
+
+--
+
+bundle update
+atualizado com sucesso
+
+--
+
+reinstala nokogiri devido voltar a dar erro com nokogiri
+gem install nokogiri -v 1.10.10
+gem install nokogiri
+rails tmp:clear
+bundle install
+bundle update
+
+
+--
+
+gem pristine pg --version 1.2.3
+
+
+--
+
+voltando novamente para 
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake generate_secret_token
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake db:migrate
+
+
+RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data
+
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+--
+
+comando acha pasta redmine
+sudo find / -type d -name "redmine"
+
+
+--
+
+o redmine atual está em /home/atak/redmine/redmine-4.2.0/lib/redmine
+
+
+--
+
+está dando o erro do nokogiri que ja havia sido resolvido....
+
+--
+
+comando que sana erro do nokogiri -
+Verifique o Carregamento da Gem: Se o erro persistir, tente carregar manualmente a gem Nokogiri em seu ambiente Rails. Você pode fazer isso adicionando a seguinte linha ao seu arquivo config/application.rb:
+
+ruby
+Copy code
+require 'nokogiri'
+
+--
+
+desinstala e instala nokogiri
+
+gem uninstall nokogiri
+gem install nokogiri
+--
+
+declara novamente as variaveis
+export RAILS_ENV=production
+
+
+export REDMINE_LANG=en
+
+
+--
+
+pede para executar novamente o bundle para reinstalar nokogiri
+bundle install
+
+--
+

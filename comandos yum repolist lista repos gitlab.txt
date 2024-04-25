@@ -1,0 +1,4 @@
+yum repolist
+
+yum --showduplicates list gitlab-ee|grep 13.7
+

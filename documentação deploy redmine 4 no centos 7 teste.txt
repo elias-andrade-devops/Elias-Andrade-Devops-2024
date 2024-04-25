@@ -1,0 +1,438 @@
+documenação de teste primero deploy e instalação do redmine 4 no centos 7 para criar espelho do ambiente de produção
+
+yum update
+
+
+--
+
+yum install -y epel-release yum-utils
+yum install -y curl wget git
+
+
+--
+
+yum install -y ruby ruby-devel 
+
+esse comando instalou o ruby  2 
+Package ruby-2.0.0.648-39.el7_9.x86_64 already installed and latest version
+Package ruby-devel-2.0.0.648-39.el7_9.x86_64 already installed and latest version
+
+essas versões requerem o ruby 3 ou superior 
+
+tentando instalar o ruby 3
+:
+
+sudo yum install -y gcc openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel
+
+
+
+# Baixe a versão desejada do Ruby (substitua '3.0.0' pela versão que você deseja)
+wget https://cache.ruby-lang.org/pub/ruby/3.0/ruby-3.0.0.tar.gz
+
+# Extraia o arquivo tar
+tar -xzvf ruby-3.0.0.tar.gz
+
+# Entre no diretório extraído
+cd ruby-3.0.0
+
+# Configure e compile o Ruby
+./configure
+make
+sudo make install
+
+
+--foi preciso nistalar o ruby 3 para seguir
+
+ruby instalado para versão 3
+
+--
+essa parte exige o ruby 3
+
+gem install bundler
+
+da um erro de versão
+esse comando força a instalação - talvez nao seria necessario ter dado update do ruby para 3
+gem install bundler --force
+
+
+
+gem install rails -v 5.2.3
+
+esse comando de cima apresenta o seguinte erro:
+ERROR:  While executing gem ... (Gem::DependencyError)
+    Unable to resolve dependencies: rails requires activesupport (= 5.2.3); sprockets-rails requires activesupport (>= 5.2); railties requires activesupport (= 5.2.3); activejob requires activesupport (= 5.2.3); globalid requires activesupport (>= 6.1); activerecord requires activesupport (= 5.2.3); activemodel requires activesupport (= 5.2.3); actionpack requires activesupport (= 5.2.3); actionview requires activesupport (= 5.2.3); rails-dom-testing requires activesupport (>= 5.0.0)
+
+
+tentando contornar com o comando:
+
+gem install rails -v 5.2.3 --conservative
+
+mesmo erro
+
+tentando contornar com os seguintes comandos:
+
+/usr/local/bin/ruby --version
+
+echo $PATH
+
+gem cleanup
+
+gem environment
+
+gem update --system
+
+
+esse bloco nao executou
+
+gem install activesupport -v 5.2.3
+gem install sprockets-rails -v '>= 3.2', '< 4.0'
+gem install railties -v 5.2.3
+gem install activejob -v 5.2.3
+gem install globalid -v '>= 6.1'
+gem install activerecord -v 5.2.3
+gem install activemodel -v 5.2.3
+gem install actionpack -v 5.2.3
+gem install actionview -v 5.2.3
+gem install rails-dom-testing -v '>= 5.0', '< 6.0'
+
+
+
+
+--
+
+voltando do começo...
+
+yum install -y epel-release yum-utils
+yum install -y curl wget git
+
+tudo instalado ok...
+
+proximo bloco
+yum install -y ruby ruby-devel 
+instala ok
+
+o blunder da um erro 
+gem install bundler
+ERROR:  Error installing bundler:
+        bundler requires Ruby version >= 3.0.0.
+
+
+tentar resolver o erro do bundler com outros comandos
+fechar e abrir o terminal resolveu o problema
+
+--
+
+
+
+gem install rails -v 5.2.3
+comando também instalado com sucesso
+
+--
+
+recaptulando, até aqui então 100 % de sucesso
+"Atualize o sistema operacional:
+
+
+yum update
+Instale as dependências do Redmine:
+arduino
+
+yum install -y epel-release yum-utils
+yum install -y curl wget git
+Instale o Ruby e o Rails:
+
+yum install -y ruby ruby-devel
+gem install bundler
+gem install rails -v 5.2.3"
+
+---
+seguindo com a proxima etapa
+
+cd /opt
+wget https://www.redmine.org/releases/redmine-4.0.5.tar.gz
+tar -zxvf redmine-4.0.5.tar.gz
+mv redmine-4.0.5 /var/www/redmine
+
+o diretorio /var/www/redmine precisa ser criado automaticamente
+
+--
+
+
+cd /var/www/redmine
+bundle install --without development test
+ da um erro
+ 
+ deve-se executar 
+ bundle config set --local without 'development test'
+
+
+--
+
+cp config/configuration.yml.example config/configuration.yml
+
+
+--
+
+RAILS_ENV=production bundle exec rake generate_secret_token
+RAILS_ENV=production bundle exec rake db:migrate
+
+
+esses comandos dao um erro 
+Could not find gem 'rouge (~> 3.3.0)' in locally installed gems.
+Run `bundle install` to install missing gems.
+[root@localhost redmine-4.0.5]# RAILS_ENV=production bundle exec rake db:migrate
+Please configure your config/database.yml first
+Could not find gem 'rouge (~> 3.3.0)' in locally installed gems.
+Run `bundle install` to install missing gems.
+
+deve-se executar o comando bundle install
+
+deu erro pra instalar o rmagick
+
+An error occurred while installing rmagick (2.16.0), and Bundler cannot continue.
+
+--
+isnstalando as gemas a partir de 
+sudo yum install ImageMagick-devel
+
+
+instalado com sucesso
+
+--
+executando novamente deve-se executar o comando bundle install
+
+bundle install
+--
+instalado perfeitamente...
+seguindo para proxima etapa....
+
+
+
+RAILS_ENV=production bundle exec rake generate_secret_token
+RAILS_ENV=production bundle exec rake db:migrate
+
+
+executado com sucesso
+
+--
+
+yum install -y subversion
+
+
+yum install -y git
+
+ambos instalados ok
+--
+
+nessa parte precisa instalar o apache pra seguir
+--
+
+sudo yum install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
+sudo systemctl restart httpd
+
+
+--
+
+seguindo com a proxima etapa 
+
+:
+
+RAILS_ENV=production bundle exec rake assets:precompile
+
+
+chown -R apache:apache /var/www/redmine
+chmod -R 755 /var/www/redmine
+
+
+sudo yum install nano
+
+
+nano /etc/httpd/conf.d/redmine.conf
+
+
+<VirtualHost *:80>
+    ServerName redmine.example.com
+    DocumentRoot /var/www/redmine/public
+    <Directory /var/www/redmine/public>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+systemctl restart httpd
+
+
+--
+sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+
+
+sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
+
+
+sudo firewall-cmd --reload
+
+
+--
+
+iniciando a segunda etapa....
+
+yum update -y
+
+
+yum install -y epel-release yum-utils curl wget git
+
+
+yum install -y ruby ruby-devel
+gem install bundler
+gem install rails -v 5.2.3
+
+
+cd /opt
+wget https://www.redmine.org/releases/redmine-4.0.5.tar.gz
+tar -zxvf redmine-4.0.5.tar.gz
+mv redmine-4.0.5 /var/www/redmine
+
+
+executar o comando bundle update
+ em /var/www/redmine dentro da pasta do redmine
+ --
+ 
+ gem install nokogiri
+ 
+ --
+ 
+ 
+ bundle install --without development test
+ 
+ --
+ 
+ RAILS_ENV=production bundle exec rake generate_secret_token
+RAILS_ENV=production bundle exec rake db:migrate
+RAILS_ENV=production bundle exec rake assets:precompile
+ está dando um erro  - vou fechar e abrir o terminal
+ 
+ --
+ 
+ esses comadnos de cima estão dando erro pois dependem do postgres e de configurar o arquivo
+ database.yml
+ 
+ exemplo 
+ 
+ production:
+  adapter: postgresql
+  database: redmine_production
+  host: localhost
+  username: redmine
+  password: my_password
+  encoding: utf8
+
+
+---
+seguindo com a instalação do postgres
+sudo yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
+sudo yum install -y postgresql10-server postgresql10-contrib
+
+
+--
+
+repo postgres 10
+
+sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+
+
+instala o postgres 10
+
+sudo yum install -y postgresql10-server postgresql10-contrib
+
+
+--
+
+da erro diz que nao tem pacote disponivel 
+
+--
+baixando os pacotes direto de 
+
+http://mirror.centos.org/centos/7/sclo/x86_64/rh/Packages/r/rh-postgresql10-postgresql-contrib-10.3-2.el7.x86_64.rpm 
+http://mirror.centos.org/centos/7/sclo/x86_64/rh/Packages/r/rh-postgresql10-postgresql-10.5-1.el7.x86_64.rpm
+
+--
+
+tentando adicionar um repo e instalar vi repo
+
+Install CentOS SCLo RH repository:
+yum install centos-release-scl-rh
+Install rh-postgresql10-postgresql-contrib rpm package:
+# yum install rh-postgresql10-postgresql-contrib
+
+e 
+
+Install CentOS SCLo RH repository:
+yum install centos-release-scl-rh
+Install rh-postgresql10-postgresql rpm package:
+# yum install rh-postgresql10-postgresql
+
+--
+
+aparentemente instlado, agora precisa configurar o yml do redmine com os dados do banco, antes precisa criar o banco, os usuarios, etc...
+
+--
+
+instalado novamente com os comandos 
+
+sudo yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
+sudo yum install -y rh-postgresql10-postgresql-server rh-postgresql10-postgresql-contrib
+
+
+sudo /opt/rh/rh-postgresql10/root/usr/libexec/pgsql-10/postgresql-10-setup initdb
+sudo systemctl enable rh-postgresql10-postgresql
+sudo systemctl start rh-postgresql10-postgresql
+
+
+sudo -u postgres /opt/rh/rh-postgresql10/root/usr/bin/psql --version
+
+
+inicializado banco
+
+sudo /opt/rh/rh-postgresql10/root/usr/bin/postgresql-setup --initdb
+sudo systemctl start rh-postgresql10-postgresql
+sudo systemctl status rh-postgresql10-postgresql
+
+
+--
+
+agora com o postgres instalado voltando ao ponto anterior
+
+cd /opt
+wget https://www.redmine.org/releases/redmine-4.0.5.tar.gz
+tar -zxvf redmine-4.0.5.tar.gz
+mv redmine-4.0.5 /var/www/redmine
+
+
+--
+em /var/www/redmine/pastadoredmine
+bundle install --without development test
+
+--
+
+agora precisa preparar o banco, criar o banco, tabelas, usuarios, e configurar o yml
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

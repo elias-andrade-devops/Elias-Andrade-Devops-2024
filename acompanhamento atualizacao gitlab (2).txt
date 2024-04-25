@@ -1,0 +1,63 @@
+roteiro via repositorio
+
+Find where your version sits in the upgrade path:
+
+GitLab 14: 14.0.12 > 14.3.6 > 14.9.5 > 14.10.5.
+GitLab 15: 15.0.5 > 15.1.6 (for GitLab instances with multiple web nodes) > 15.4.6 > 15.11.13.
+GitLab 16: 16.0.8 (only instances with lots of users or large pipeline variables history) > 16.1.6 (instances with NPM packages in their package registry) > 16.2.9 (only instances with large pipeline variables history) > 16.3.7 > 16.7.z > latest 16.Y.Z.
+
+
+versao original 14.0.1
+atualizado a versao 14.2 
+ sudo yum install  gitlab-ce-14.2.1 ok
+
+para versao 14.10.5
+sudo yum install  gitlab-ce-14.10.5 ok 
+
+--
+
+tentar seguir para versão 15...
+sudo yum install  gitlab-ce-15.0.5 ok
+sudo yum install  gitlab-ce-15.1.6 ok 
+sudo yum install  gitlab-ce-15.4.6 ok
+sudo yum install  gitlab-ce-15.11.13 ok 
+sudo yum install  gitlab-ce-16.0.8 ok  - essa versão pede para reiniciar o redis - sudo gitlab-ctl restart redis
+sudo yum install  gitlab-ce-16.1.6 ok
+sudo yum install  gitlab-ce-16.2.9 ok
+sudo yum install  gitlab-ce-16.3.7 ok
+sudo yum install  gitlab-ce-16.7.3 - ok versão final da documentação - 
+sudo yum install  gitlab-ce-16.7.4 -  ok - última versão disponivel  pushed by gitlab 13 days ago
+
+
+--
+
+
+
+agora iniciando o roteiro via .prm
+
+primeiro irei baixar todos os rpm usando wget, foi criado um bash para baixar todos os arquivos das versões necessarias --
+
+--
+
+versao original 14.0.1
+
+instalar a versão original via pacote usando wget e instalar localmente o rpm
+
+gitlab-ce-14.2.1
+gitlab-ce-14.10.5
+gitlab-ce-15.0.5
+gitlab-ce-15.1.6
+gitlab-ce-15.4.6
+gitlab-ce-15.11.13
+gitlab-ce-16.0.8
+gitlab-ce-16.1.6
+gitlab-ce-16.2.9
+gitlab-ce-16.3.7
+gitlab-ce-16.7.3
+gitlab-ce-16.7.4
+
+---
+
+
+
+

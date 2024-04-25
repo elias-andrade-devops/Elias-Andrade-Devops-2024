@@ -1,0 +1,1 @@
+sudo /opt/rh/rh-postgresql10/root/usr/bin/postgresql-setup --initdb

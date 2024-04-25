@@ -1,0 +1,38 @@
+# Instalação dos pacotes RPM no CentOS 8
+
+# Versão 14.2.1
+sudo yum install -y gitlab-ce-14.2.1-ce.0.el8.x86_64.rpm
+
+# Versão 14.10.5
+sudo yum install -y gitlab-ce-14.10.5-ce.0.el8.x86_64.rpm
+
+# Versão 15.0.5
+sudo yum install -y gitlab-ce-15.0.5-ce.0.el8.x86_64.rpm
+
+# Versão 15.1.6
+sudo yum install -y gitlab-ce-15.1.6-ce.0.el8.x86_64.rpm
+
+# Versão 15.4.6
+sudo yum install -y gitlab-ce-15.4.6-ce.0.el8.x86_64.rpm
+
+# Versão 15.11.13
+sudo yum install -y gitlab-ce-15.11.13-ce.0.el8.x86_64.rpm
+
+# Versão 16.0.8
+sudo yum install -y gitlab-ce-16.0.8-ce.0.el8.x86_64.rpm
+
+# Versão 16.1.6
+sudo yum install -y gitlab-ce-16.1.6-ce.0.el8.x86_64.rpm
+
+# Versão 16.2.9
+sudo yum install -y gitlab-ce-16.2.9-ce.0.el8.x86_64.rpm
+
+# Versão 16.3.7
+sudo yum install -y gitlab-ce-16.3.7-ce.0.el8.x86_64.rpm
+
+# Versão 16.7.3
+sudo yum install -y gitlab-ce-16.7.3-ce.0.el8.x86_64.rpm
+
+# Versão 16.7.4
+sudo yum install -y gitlab-ce-16.7.4-ce.0.el8.x86_64.rpm
+

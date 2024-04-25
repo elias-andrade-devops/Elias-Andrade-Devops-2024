@@ -1,0 +1,13 @@
+# Baixe o código-fonte do PostgreSQL
+wget https://ftp.postgresql.org/pub/source/v14.2/postgresql-14.2.tar.gz
+tar xvf postgresql-14.2.tar.gz
+cd postgresql-14.2
+
+# Configure o código
+./configure
+
+# Compile o código
+make
+
+# Instale o pacote
+sudo make install

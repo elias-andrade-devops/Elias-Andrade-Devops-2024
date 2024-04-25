@@ -1,0 +1,67 @@
+# Instalação dos pacotes RPM no CentOS 8
+
+# Versão 14.2.1
+sudo yum install -y ./gitlab-ce-14.2.1-ce.0.el8.x86_64.rpm -y
+iniciado 09:08 horas terminou 09:18
+
+
+# Versão 14.10.5
+sudo yum install -y ./gitlab-ce-14.10.5-ce.0.el8.x86_64.rpm -y
+iniciado em 09:19 terminou 09:29
+
+
+# Versão 15.0.5
+sudo yum install -y ./gitlab-ce-15.0.5-ce.0.el8.x86_64.rpm -y
+iniciado 09:30 terminou 09:41
+
+
+# Versão 15.1.6
+sudo yum install -y ./gitlab-ce-15.1.6-ce.0.el8.x86_64.rpm -y
+iniciado em 09:42 terminou em 09:50
+
+
+# Versão 15.4.6
+sudo yum install -y ./gitlab-ce-15.4.6-ce.0.el8.x86_64.rpm -y
+essa versão possui várias dependencias, principalmente do python e pearl, faz um update/upgrade dos pacotes e dependencias antes da instalação
+iniciado 09:52 concluido 10:02
+
+
+# Versão 15.11.13
+sudo yum install -y ./gitlab-ce-15.11.13-ce.0.el8.x86_64.rpm -y
+iniciado 10:03 terminou 10:20
+
+
+# Versão 16.0.8
+sudo yum install -y ./gitlab-ce-16.0.8-ce.0.el8.x86_64.rpm -y
+inicido 10:21  terminou 10:37
+
+
+# Versão 16.1.6
+sudo yum install -y ./gitlab-ce-16.1.6-ce.0.el8.x86_64.rpm -y
+essa versão pede para reiniciar o redis sudo gitlab-ctl restart redis
+iniciado 10:38 terminou 10:52
+
+
+# Versão 16.2.9
+sudo yum install -y ./gitlab-ce-16.2.9-ce.0.el8.x86_64.rpm -y
+pede reset do redis sudo gitlab-ctl restart redis
+iniciou 10:53 terminou 11:05
+
+
+# Versão 16.3.7
+sudo yum install -y ./gitlab-ce-16.3.7-ce.0.el8.x86_64.rpm -y
+iniciou 11:07 terminou 11:27
+
+
+# Versão 16.7.3
+sudo yum install -y ./gitlab-ce-16.7.3-ce.0.el8.x86_64.rpm -y
+essa versão pede para reiniciar o redis sudo gitlab-ctl restart redis
+iniciou 11:29 terminou 11:42
+
+
+# Versão 16.7.4
+sudo yum install -y ./gitlab-ce-16.7.4-ce.0.el8.x86_64.rpm -y
+iniciou 11:43 terminou 12:05
+
+
+------

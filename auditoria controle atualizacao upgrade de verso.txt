@@ -1,0 +1,28 @@
+atualizando via repo
+
+
+
+
+
+
+--
+
+
+
+
+atualizando via pacotes
+
+
+--
+
+verrsao atual 14.0.1
+
+--
+
+processo upgrade
+primeiro upgrade para
+sudo yum install  gitlab-ce-14.2
+
+
+--
+

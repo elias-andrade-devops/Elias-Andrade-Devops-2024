@@ -1,0 +1,5 @@
+[root@localhost ~]# sudo systemctl list-unit-files | grep postgresql
+rh-postgresql10-postgresql.service            enabled
+rh-postgresql10-postgresql@.service           disabled
+rh-postgresql96-postgresql.service            disabled
+rh-postgresql96-postgresql@.service           disabled

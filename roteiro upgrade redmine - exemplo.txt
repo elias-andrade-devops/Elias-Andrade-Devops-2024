@@ -1,0 +1,126 @@
+On old system:
+    Back out all plugins
+    Save database
+    Save db/schema.rb
+    Save files subtree
+  On new system:
+    Create database
+    Install redmine 
+    Restore old database
+    Copy saved schema.rb into db subdirectory
+    Replace files directory with saved files
+    Migrate database
+    Install new versions of plugins as appropriate
+	
+	
+	=----=
+	
+	On old system:
+  You may want to duplicate your redmine environment and work with that version:
+    Set up a redmine of the same version, with the same plugins.
+    Reload the database.
+    Point the files subdir to the files, or duplicate them as well.
+  Stop apache if it seems wise
+    sudo apache2ctl stop
+  sudo -i -u <rm-user>
+    Save files subtree:
+      mkdir rm_saved
+      cd <rm-dir>
+      tar cf ~/rm_saved/rm_files.tar files
+    Uninstall all plugins:
+      Be careful to uninstall in proper (reverse of installation) order,
+        as some plugins may depend on others.
+      cd ~/<rm-dir>
+      For each plugin:
+        bin/rake redmine:plugins:migrate NAME=<plugin-name> VERSION=0 RAILS_ENV=<rm-rails-env>
+        rm -rf plugins/<plugin-name>
+        touch tmp/restart.txt
+        <make sure things still look ok>
+          Note: at one point I had some display glitches,
+          which disappeared when the last plugin was removed
+    Dump the mysql database:
+      cd ~/rm_saved
+      /usr/bin/mysqldump -u <mysql-rm-user> -p<pw> <rm-db> --lock-tables --no-tablespaces >rm_mysql_data_noplugins.sql
+    Save the db/schema.db file
+      cp -p ~/<rm-dir>/db/schema.rb schema.rb_noplugins_rm4
+    Make the saved files world (or whatever is appropriate for your environment) readable:
+      chmod 444 *
+      exit
+  Restart apache if you stopped it
+   sudo apache2ctl start
+  Make sure you can sftp into this system from the new system.
+  
+  
+  ==--==
+  
+  Configure the new system:
+  
+  sudo -i
+  install apache2 and configure
+  install mysql 5.7
+    This is non-trivial, as ubuntu 20 does not come with a mysql 5.7 package normally available
+    see: https://www.vultr.com/docs/how-to-install-mysql-5-7-on-ubuntu-20-04
+    create user for redmine
+      mysql -u root -p
+      mysql> create user '<rm-db-user>'@'localhost' identified by '<rm-db-user-pw>';
+    create database for redmine
+      mysql> create database <rm-db> character set utf8mb4;
+      mysql> grant all privileges on <rm-db>.* to '<rm-db-user>'@'localhost';
+      mysql> exit;
+  install rvm (I originally had trouble I think because I was using chruby)
+  install ruby 3.0.4 globally
+  install passenger 6.0.14
+  create the redmine admin user
+    sudo adduser --debug --system --shell /bin/bash --gecos 'Redmine Admin' --group <rm-user>
+    sudo passwd <rm-user>
+  put the redmine user in the rvm group
+    sudo usermod -a -G rvm <rm-user>
+exit
+as redmine admin user:
+ Note that on this new system (i.e. using these instructions), redmine is running with a *per-user* ruby,
+ not the global ruby.  The apache2 files need to include a PassengerRuby pointing at this ruby:
+   PassengerRuby <rm-user-home>/.rvm/rubies/ruby-3.0.4/bin/ruby
+sudo -i -u <rm-user>
+  mkdir rm_saved
+  cd rm_saved
+  sftp to the old system and transfer the saved files:
+    sftp ...
+    cd rm_saved
+    get rm_files.tar
+    get rm_mysql_data_noplugins.sql
+    get schema.rb_noplugins_rm4
+    quit
+  Install redmine 5
+    I tried to match the original configuration as closely as possible;
+    I don't know how important that is, since the db will be overwritten.
+    I did use a different environment, (other than production, development, or test)
+    although that is optional and requires configuring database.yml accordingly
+  Start rm 5 and configure, without plugins
+    Make sure it works.
+  exit
+Stop apache
+  sudo apache2ctl stop
+Restore the redmine 4 version of the db
+  mysql -u root -p
+  mysql> use <rm-db>;
+  mysql> source <rm-user-home>/rm_saved/rm_mysql_data_noplugins.sql
+  mysql> exit
+As the redmine user:
+sudo -i -u <rm-user>
+  Restore the preserved files:
+    cd ~/<rm-dir>
+    mv files files_org
+    tar xf ~/rm_saved/rm_files.tar
+  Replace the schema.rb with the redmine 4 version that matches the restored database
+    cd ~/<rm-dir>/db
+    mv schema.rb schema.rb_rm5_org
+    cp -p ~/rm_saved/schema.rb_noplugins_rm4 schema.rb
+    chmod 664 schema.rb
+  Migrate the db to the redmine 5 operational point
+    cd ~/<rm-dir>
+    bundle exec rake db:migrate RAILS_ENV=<rm-env>
+  exit
+restart apache
+  sudo apache2ctl start
+  
+  

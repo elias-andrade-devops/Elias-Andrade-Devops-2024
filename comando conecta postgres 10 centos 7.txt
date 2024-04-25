@@ -1,0 +1,4 @@
+sudo -u postgres psql
+sudo yum install ruby-devel
+gem install bundler
+bundle install --without development test

@@ -1,0 +1,4 @@
+sudo yum install libxml2 libxml2-devel
+
+
+sudo yum install libxslt libxslt-devel

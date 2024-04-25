@@ -1,0 +1,23 @@
+yum -y install yum-plugin-priorities
+sed -i -e "s/\]$/\]\npriority=1/g" /etc/yum.repos.d/CentOS-Base.repo
+
+yum -y install epel-release
+sed -i -e "s/\]$/\]\npriority=5/g" /etc/yum.repos.d/epel.repo
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/epel.repo
+# Se [enabled=0], use este comando para usar o repositório:
+# yum --enablerepo=epel install [Pacote]
+
+yum -y install centos-release-scl-rh centos-release-scl
+sed -i -e "s/\]$/\]\npriority=10/g" /etc/yum.repos.d/CentOS-SCLo-scl.repo
+sed -i -e "s/\]$/\]\npriority=10/g" /etc/yum.repos.d/CentOS-SCLo-scl-rh.repo
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/CentOS-SCLo-scl.repo
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/CentOS-SCLo-scl-rh.repo
+# Se [enabled=0], use estes comandos para usar o repositório:
+# yum --enablerepo=centos-sclo-rh install [Pacote]
+# yum --enablerepo=centos-sclo-sclo install [Pacote]
+
+yum -y install http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+sed -i -e "s/\]$/\]\npriority=10/g" /etc/yum.repos.d/remi-safe.repo
+sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/remi-safe.repo
+# Se [enabled=0], use este comando para usar o repositório:
+# yum --enablerepo=remi-safe install [Pacote]

@@ -1,0 +1,2 @@
+sudo yum clean all
+sudo yum reinstall ruby-devel

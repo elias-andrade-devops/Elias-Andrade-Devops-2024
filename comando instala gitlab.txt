@@ -1,0 +1,1 @@
+sudo yum install gitlab-runner-16.5.0-1

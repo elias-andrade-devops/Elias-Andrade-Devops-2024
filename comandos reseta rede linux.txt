@@ -1,0 +1,10 @@
+Other options in Linux to renew dhcp
+There is no need to restart network service. Above command should work with any Linux distro such as RHEL, Fedora, CentOS, Ubuntu and others. On a related note you can also try out the following commands:
+ifdown eth0
+ifup eth0
+### RHEL/CentOS/Fedora specific command ###
+/etc/init.d/network restart
+
+OR
+### Debian / Ubuntu Linux specific command ###
+/etc/init.d/networking restart

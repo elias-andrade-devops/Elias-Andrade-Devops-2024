@@ -1,0 +1,35 @@
+# Versão 14.2.1
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-14.2.1-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 14.10.5
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-14.10.5-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 15.0.5
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-15.0.5-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 15.1.6
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-15.1.6-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 15.4.6
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-15.4.6-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 15.11.13
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-15.11.13-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.0.8
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.0.8-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.1.6
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.1.6-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.2.9
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.2.9-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.3.7
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.3.7-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.7.3
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.7.3-ce.0.el8.x86_64.rpm/download.rpm
+
+# Versão 16.7.4
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/8/gitlab-ce-16.7.4-ce.0.el8.x86_64.rpm/download.rpm

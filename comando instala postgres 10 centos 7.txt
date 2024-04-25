@@ -1,0 +1,1 @@
+sudo yum --enablerepo=centos-sclo-rh -y install rh-postgresql10-postgresql-server
