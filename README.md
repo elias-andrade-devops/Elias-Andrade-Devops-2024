@@ -7,9 +7,7 @@
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
 
-🔹 Sobre 🔹
-
-Sou um Analista DevOps & Platform Engineer em constante evolução, com 14 anos de experiência em Administração de Redes e Infraestrutura, certificado ITIL v3 desde 2012. Desde 2010, venho desempenhando um papel vital em ambientes híbridos Linux e Windows, em diversas nuvens, incluindo cloud privada, on-premises e bare metal.
+Desde o ínicio de 2024 atuando como Analista DevOps & Platform Engineer em constante evolução, com 14 anos de experiência em Administração de Redes e Infraestrutura, certificado ITIL v3 desde 2012. Desde 2010, venho desempenhando um papel vital em ambientes híbridos Linux e Windows, em diversas nuvens, incluindo cloud privada, on-premises e bare metal.
 
 🛠️ Experiência Profissional 🛠️
 
