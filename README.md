@@ -3,9 +3,15 @@
 ![Elias Andrade - Profile Picture](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_kpuiYlsq9Q.png)
 
 
+## Let's Connect!
+- 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
+- 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
+- 🐦 **Twitter:** [@Elias_devops](https://twitter.com/Elias_devops)
+
 ## Sobre Mim
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
+
 
 Desde o ínicio de 2024 atuando como Analista DevOps & Platform Engineer em constante evolução, com 14 anos de experiência em Administração de Redes e Infraestrutura, certificado ITIL v3 desde 2012. Desde 2010, venho desempenhando um papel vital em ambientes híbridos Linux e Windows, em diversas nuvens, incluindo cloud privada, on-premises e bare metal.
 
@@ -283,10 +289,3 @@ Meu objetivo ao criar este repositório foi tornar fácil o acesso aos arquivos 
 Um repositório contendo o portfólio de Elias Andrade, especialista em Visão Computacional e Processamento de Linguagem Natural. Saiba mais sobre meus conhecimentos nessa área.
 #### [Portfólio e jornada analista de redes e infraestrutura - Elias Andrade](https://github.com/chaos4455/Certifica-es) 📚
 Este repositório abriga o portfólio de realizações, projetos, experiência e conquistas, destacando minhas habilidades em projetos e experiência como administrador de redes e analista de infraestrutura. Saiba mais sobre meus conhecimentos nessa área.
-
-
-
-## Let's Connect!
-- 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
-- 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
-- 🐦 **Twitter:** [@Elias_devops](https://twitter.com/Elias_devops)
