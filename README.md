@@ -91,11 +91,8 @@ Este repositório aproveita o poder das GitHub Actions para automatizar o deploy
 
 ### 📄 Detalhes da Implementação:
 
-Para uma visão mais detalhada sobre como a automação é configurada, você pode conferir o arquivo [Veja o yaml da Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/github-action-argo-k8s-deploy.yaml).
-
-<!-- Ciclo de Desenvolvimento com Kubernetes -->
-
-![Ciclo de Desenvolvimento com Kubernetes](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/K8s%20in%20the%20app%20development%20lifecycle%20good%20color.png)
+Para uma visão mais detalhada sobre como a automação é configurada, você pode conferir o arquivo 
+[Veja o yaml da Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/github-action-argo-k8s-deploy.yaml).
 
 
 <!-- Tela de Automação de Deploy no Argo via GitHub Actions -->
