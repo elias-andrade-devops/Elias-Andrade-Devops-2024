@@ -25,6 +25,11 @@ Possuo um vasto conhecimento em virtualização, trabalhando com plataformas com
 
 Sou especialista em Docker, gerenciando clusters e orquestrando contêineres para implantação de micro serviços. Utilizo o Kubernetes para escalabilidade horizontal e implantação automatizada de serviços, garantindo alta disponibilidade e performance.
 
+<!-- Imagem da Baleia do Docker -->
+
+![Baleia do Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/_5b2c4b4f-8113-4978-832d-8dd46f144f00.jpeg?raw=true)
+
+
 🔍 Monitoramento e Análise de Métricas 🔍
 
 Desenvolvo e implemento soluções avançadas de monitoramento utilizando Prometheus, Grafana, Loki e Zabbix. Isso permite uma análise profunda de métricas, garantindo o desempenho, a disponibilidade e a confiabilidade dos sistemas em tempo real.
@@ -35,6 +40,15 @@ Desenvolvo e implemento soluções avançadas de monitoramento utilizando Promet
 ⚙️ Automação e CI/CD ⚙️
 
 Sou especialista em automação, utilizando ferramentas como Ansible e Puppet Bolt para configurar e gerenciar infraestrutura de forma eficiente e consistente. Implemento pipelines de CI/CD com Jenkins Pipeline, GitLab CI/CD e GitHub Actions, garantindo a integração contínua e a entrega contínua de software de alta qualidade.
+
+<!-- Tela de Automação de Deploy no Argo via GitHub Actions -->
+
+![Automação de Deploy no Argo via GitHub Actions](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_Nu8ifskwKv.png?raw=true)
+
+<!-- Print de Sucesso em uma Automação do GitHub Action para Buildar Imagem do Docker -->
+
+![Sucesso em Automatização do GitHub Action para Buildar Imagem do Docker](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/chrome_mLHk4d46Ey.png)
+
 
 🔄 Scaling e Alta Disponibilidade 🔄
 
