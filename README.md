@@ -71,6 +71,30 @@ Para mais detalhes sobre a implementação da ação, confira o arquivo `action-
 
 [Veja o yaml da Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/action-docker-image-build.yaml)
 
+## 🚀🔧📦 Automatização Avançada de Deploy no ArgoCD via GitHub Actions
+
+Este repositório aproveita o poder das GitHub Actions para automatizar o deploy de uma aplicação no ArgoCD, em um cluster Kubernetes na DigitalOcean. A ação é acionada automaticamente a cada push na branch `main`.
+
+### 🛠️ Tarefas Realizadas pela Action:
+
+1. **Configuração do Ambiente Kubernetes:**
+   - 🛠️ Configuração do ambiente de trabalho.
+   - 🔑 Autenticação no cluster Kubernetes e no ArgoCD.
+
+2. **Preparação dos Segredos:**
+   - 📋 Obtenção das credenciais do registro Docker.
+   - 🔐 Criação de um segredo no Kubernetes para autenticação na DigitalOcean.
+
+3. **Implantação da Aplicação no ArgoCD:**
+   - 🚀 Criação da aplicação no ArgoCD.
+   - 🔄 Sincronização da aplicação para iniciar o processo de implantação.
+
+### 📄 Detalhes da Implementação:
+
+Para uma visão mais detalhada sobre como a automação é configurada, você pode conferir o arquivo [`github-action-argo-k8s-deploy.yaml`](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/github-action-argo-k8s-deploy.yaml).
+
+Não hesite em explorar e adaptar a automação de acordo com suas necessidades e especificações do ambiente Kubernetes! ✨🔍
+
 
 <!-- Ciclo de Desenvolvimento com Kubernetes -->
 
