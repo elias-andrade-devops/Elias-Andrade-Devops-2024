@@ -1,0 +1,55 @@
+name: Deploy to ArgoCD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to ArgoCD
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v1
+        with:
+          kubeconfig: ${{ secrets.KUBE_CONFIG_DATA }}
+
+      - name: Install ArgoCD CLI
+        run: |
+          curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+          chmod +x /usr/local/bin/argocd
+
+      - name: Log in to ArgoCD
+        run: |
+          argocd login --plaintext --insecure --username ${{ secrets.ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }} --grpc-web ${{ secrets.ARGOCD_HOST }}
+
+      - name: Get Docker Registry Credentials
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          
+      - name: Fetch Secret for DigitalOcean Kubernetes
+        run: |
+          doctl auth init --access-token ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          kubectl create secret generic digitalocean --from-literal=token=${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Set Context for Kubernetes
+        run: |
+          kubectl config set-context digitalocean --namespace=${{ secrets.K8S_NAMESPACE }} --cluster=${{ secrets.K8S_CLUSTER }} --user=${{ secrets.K8S_USER }}
+          kubectl config use-context digitalocean
+
+      - name: Deploy to ArgoCD
+        run: |
+          argocd app create my-app \
+            --repo ${{ secrets.ARGOCD_REPO_URL }} \
+            --path path/to/app \
+            --dest-server https://kubernetes.default.svc \
+            --dest-namespace ${{ secrets.K8S_NAMESPACE }} \
+            --sync-policy automated \
+            --auto-prune \
+            --self-heal
+          argocd app sync my-app
