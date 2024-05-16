@@ -63,8 +63,8 @@ A ação realiza as seguintes tarefas:
 
 Para mais detalhes sobre a implementação da ação, confira o arquivo `action-docker-image-build.yaml`.
 
-[Veja a Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/action-docker-image-build.yaml)
-Veja a Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/action-docker-image-build.yaml)
+[Veja o yaml da Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/action-docker-image-build.yaml)
+
 
 <!-- Ciclo de Desenvolvimento com Kubernetes -->
 
