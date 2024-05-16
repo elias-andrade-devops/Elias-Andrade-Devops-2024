@@ -46,6 +46,25 @@ Desenvolvo e implemento soluções avançadas de monitoramento utilizando Promet
 
 Sou especialista em automação, utilizando ferramentas como Ansible e Puppet Bolt para configurar e gerenciar infraestrutura de forma eficiente e consistente. Implemento pipelines de CI/CD com Jenkins Pipeline, GitLab CI/CD e GitHub Actions, garantindo a integração contínua e a entrega contínua de software de alta qualidade.
 
+## Exemplo: Automatização de Construção e Push de Imagem Docker
+
+Este repositório utiliza a GitHub Action para automatizar a construção e push de uma imagem Docker quando ocorrem mudanças no código-fonte. A ação é executada em resposta a pushs na branch `develop` e tags no formato de versão `X.Y.Z`.
+
+A ação realiza as seguintes tarefas:
+
+- Instala as dependências do projeto.
+- Executa os testes automatizados.
+- Constrói a imagem Docker.
+- Empurra a imagem para um registro Docker privado.
+- Implanta a imagem no ambiente de staging quando há um push na branch `develop`.
+- Implanta a imagem no ambiente de produção quando uma nova tag é criada.
+- Atualiza o deployment no Kubernetes após a implantação na produção.
+- Notifica sobre o status do build no Slack.
+
+Para mais detalhes sobre a implementação da ação, confira o arquivo `action-docker-image-build.yaml`.
+
+[Veja a Action](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/action-docker-image-build.yaml)
+
 <!-- Ciclo de Desenvolvimento com Kubernetes -->
 
 ![Ciclo de Desenvolvimento com Kubernetes](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/K8s%20in%20the%20app%20development%20lifecycle%20good%20color.png)
