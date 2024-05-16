@@ -28,6 +28,9 @@ Sou especialista em Docker, gerenciando clusters e orquestrando contêineres par
 🔍 Monitoramento e Análise de Métricas 🔍
 
 Desenvolvo e implemento soluções avançadas de monitoramento utilizando Prometheus, Grafana, Loki e Zabbix. Isso permite uma análise profunda de métricas, garantindo o desempenho, a disponibilidade e a confiabilidade dos sistemas em tempo real.
+<!-- Imagem do Cluster no Grafana -->
+
+![Cluster no Grafana](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/grafanacluster.png)
 
 ⚙️ Automação e CI/CD ⚙️
 
