@@ -46,6 +46,11 @@ Desenvolvo e implemento soluções avançadas de monitoramento utilizando Promet
 
 Sou especialista em automação, utilizando ferramentas como Ansible e Puppet Bolt para configurar e gerenciar infraestrutura de forma eficiente e consistente. Implemento pipelines de CI/CD com Jenkins Pipeline, GitLab CI/CD e GitHub Actions, garantindo a integração contínua e a entrega contínua de software de alta qualidade.
 
+<!-- Ciclo de Desenvolvimento com Kubernetes -->
+
+![Ciclo de Desenvolvimento com Kubernetes](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/K8s%20in%20the%20app%20development%20lifecycle%20good%20color.png)
+
+
 <!-- Tela de Automação de Deploy no Argo via GitHub Actions -->
 
 ![Automação de Deploy no Argo via GitHub Actions](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_Nu8ifskwKv.png?raw=true)
