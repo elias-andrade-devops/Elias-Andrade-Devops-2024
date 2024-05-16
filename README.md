@@ -7,6 +7,50 @@
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
 
+🔹 Sobre 🔹
+
+Sou um Analista DevOps & Platform Engineer em constante evolução, com 14 anos de experiência em Administração de Redes e Infraestrutura, certificado ITIL v3 desde 2012. Desde 2010, venho desempenhando um papel vital em ambientes híbridos Linux e Windows, em diversas nuvens, incluindo cloud privada, on-premises e bare metal.
+
+🛠️ Experiência Profissional 🛠️
+
+Atualmente, atuo como Analista DevOps & Platform Engineer em uma empresa confidencial, localizada em Porto Alegre, atuando remotamente desde abril de 2024. Meu principal foco é liderar a transformação digital e a modernização da infraestrutura de TI da empresa. Colaboro estreitamente com equipes de desenvolvimento e operações para implementar práticas DevOps e adotar tecnologias modernas, impulsionando assim a eficiência operacional e a entrega de software.
+
+💻 Administração de Redes e Sistemas Linux 💻
+
+Como especialista em administração de sistemas Linux, domino distribuições populares como Ubuntu, Debian e CentOS. Desde a configuração inicial até a otimização avançada de desempenho e segurança, estou preparado para enfrentar qualquer desafio neste ecossistema.
+
+☁️ Virtualização e Cloud ☁️
+
+Possuo um vasto conhecimento em virtualização, trabalhando com plataformas como VMware vSphere, VirtualBox, Hyper-V, KVM, QEMU e AWS EC2. Sou hábil na implementação e gerenciamento de ambientes de cloud privada e pública, utilizando ferramentas como Terraform para provisionamento automatizado e escalável.
+
+🐳 Docker e Orquestração de Contêineres 🐳
+
+Sou especialista em Docker, gerenciando clusters e orquestrando contêineres para implantação de micro serviços. Utilizo o Kubernetes para escalabilidade horizontal e implantação automatizada de serviços, garantindo alta disponibilidade e performance.
+
+🔍 Monitoramento e Análise de Métricas 🔍
+
+Desenvolvo e implemento soluções avançadas de monitoramento utilizando Prometheus, Grafana, Loki e Zabbix. Isso permite uma análise profunda de métricas, garantindo o desempenho, a disponibilidade e a confiabilidade dos sistemas em tempo real.
+
+⚙️ Automação e CI/CD ⚙️
+
+Sou especialista em automação, utilizando ferramentas como Ansible e Puppet Bolt para configurar e gerenciar infraestrutura de forma eficiente e consistente. Implemento pipelines de CI/CD com Jenkins Pipeline, GitLab CI/CD e GitHub Actions, garantindo a integração contínua e a entrega contínua de software de alta qualidade.
+
+🔄 Scaling e Alta Disponibilidade 🔄
+
+Implemento soluções de escalabilidade automática e alta disponibilidade, garantindo que os sistemas permaneçam resilientes mesmo em momentos de pico de tráfego. Utilizo práticas como autoscaling e clustering para manter a estabilidade e o desempenho dos serviços.
+
+🛡️ Backup e Segurança 🛡️
+
+Desenvolvo e implemento estratégias de backup automatizado e recuperação de desastres, garantindo a integridade dos dados e a continuidade dos negócios. Implemento políticas de segurança robustas para proteger os recursos da infraestrutura e os dados sensíveis da empresa.
+
+🤖 Automatização e Scripting Avançado 🤖
+
+Sou especialista em automação, utilizando linguagens como Python, Bash e PowerShell para criar scripts e automações que simplificam tarefas operacionais e aumentam a produtividade da equipe. Meu domínio dessas linguagens permite desenvolver soluções eficazes para uma ampla variedade de desafios de TI.
+
+✨ Inovação e Melhoria Contínua ✨
+
+Estou sempre buscando maneiras de inovar e otimizar os processos de TI. Lidero projetos de automação e melhoria contínua, visando aumentar a eficiência operacional e reduzir o tempo de inatividade, mantendo-me atualizado com as tendências mais recentes em tecnologia e práticas de DevOps.
+
 ## Habilidades
 
 ### Sistemas Operacionais
