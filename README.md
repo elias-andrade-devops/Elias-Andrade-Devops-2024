@@ -21,6 +21,11 @@ Como especialista em administração de sistemas Linux, domino distribuições p
 
 Possuo um vasto conhecimento em virtualização, trabalhando com plataformas como VMware vSphere, VirtualBox, Hyper-V, KVM, QEMU e AWS EC2. Sou hábil na implementação e gerenciamento de ambientes de cloud privada e pública, utilizando ferramentas como Terraform para provisionamento automatizado e escalável.
 
+<!-- Ambiente Grafana para Monitoramento de Containers Ubuntu Server -->
+
+![Ambiente Grafana para Monitoramento de Containers Ubuntu Server](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/chrome_yQ3oJjukkk.png)
+
+
 🐳 Docker e Orquestração de Contêineres 🐳
 
 Sou especialista em Docker, gerenciando clusters e orquestrando contêineres para implantação de micro serviços. Utilizo o Kubernetes para escalabilidade horizontal e implantação automatizada de serviços, garantindo alta disponibilidade e performance.
@@ -62,6 +67,15 @@ Desenvolvo e implemento estratégias de backup automatizado e recuperação de d
 
 Sou especialista em automação, utilizando linguagens como Python, Bash e PowerShell para criar scripts e automações que simplificam tarefas operacionais e aumentam a produtividade da equipe. Meu domínio dessas linguagens permite desenvolver soluções eficazes para uma ampla variedade de desafios de TI.
 
+<!-- Script/Menu Interativo em Python para Automação e Gestão de Tasks e Back Office no Kubernetes -->
+
+![Script/Menu Interativo em Python para Automação e Gestão de Tasks e Back Office no Kubernetes](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/py_v7P8wmuJoi.png)
+
+<!-- Script em Python para Gestão de Segredos -->
+
+![Script em Python para Gestão de Segredos](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/py_oOy6bfUTIc.png)
+
+
 ✨ Inovação e Melhoria Contínua ✨
 
 Estou sempre buscando maneiras de inovar e otimizar os processos de TI. Lidero projetos de automação e melhoria contínua, visando aumentar a eficiência operacional e reduzir o tempo de inatividade, mantendo-me atualizado com as tendências mais recentes em tecnologia e práticas de DevOps.
@@ -77,6 +91,10 @@ Estou sempre buscando maneiras de inovar e otimizar os processos de TI. Lidero p
 
 - 🐳 **Docker:** Especialista em contêineres Docker para implementação simplificada e portabilidade de aplicações.
 - 🌐 **Kubernetes:** Conhecimento sólido em orquestração de contêineres com Kubernetes, garantindo escalabilidade e alta disponibilidade.
+
+<!-- Instância do MongoDB no MongoDB Compass -->
+
+![Instância do MongoDB no MongoDB Compass](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/MongoDBCompass_3qsh6eJWBp.png)
 
 ### Ferramentas de Controle de Versão e Integração Contínua
 
