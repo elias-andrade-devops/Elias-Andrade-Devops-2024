@@ -1,4 +1,4 @@
-# Portfolio de Elias Andrade - Analista de Infra DevOps 🚀
+# Portfolio de Elias Andrade - Analista de Infraestrutura e DevOps 🚀
 
 ![Elias Andrade - Profile Picture](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_kpuiYlsq9Q.png)
 
