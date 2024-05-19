@@ -12,6 +12,21 @@ Para exemplos de certificações, veja também o repositório [Certificações](
 - 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
 - 🐦 **Twitter:** [@Elias_devops](https://twitter.com/Elias_devops)
 
+# Currículos de Elias Andrade
+
+## 📄 Administrador de Redes e Infraestrutura / Analista DevOps
+
+[![Currículo Administrador de Redes e Infraestrutura / Analista DevOps](https://img.shields.io/badge/Currículo-Administrador_de_Redes_e_Infraestrutura_/_Analista_DevOps-blue)](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/Curr%C3%ADculo%20Elias%20Andrade%20-%20Administrador%20de%20Redes%20e%20Infraestrutura%20%20Analista%20DevOps%20-%20Remoto.pdf)
+
+Este currículo abrange minhas habilidades e experiência como Administrador de Redes e Infraestrutura, destacando também meu conhecimento e experiência como Analista DevOps.
+
+## 🚀 Analista DevOps GitOps CI/CD Docker GitHub Kubernetes ArgoCD Platform Engineer
+
+[![Currículo Analista DevOps GitOps CI/CD Docker GitHub Kubernetes ArgoCD Platform Engineer](https://img.shields.io/badge/Currículo-Analista_DevOps_GitOps_CI_CD_Docker_GitHub_Kubernetes_ArgoCD_Platform_Engineer-green)](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/Elias%20Andrade%20-%20Administrador%20de%20redes%20e%20infraestrutura%20%20Analista%20Devops%20-%20Gitops%20%20Platform%20Engineer%20-%20Remoto.pdf)
+
+Este currículo destaca minha especialização como Analista DevOps com foco em GitOps, CI/CD, Docker, GitHub, Kubernetes, ArgoCD e plataformas de engenharia.
+
+
 ## Sobre Mim
 
 🔧 Sou um entusiasta de tecnologia apaixonado por automação e eficiência. Com mais de 14 anos de experiência em infraestrutura de TI, estou comprometido em garantir que as operações de infraestrutura sejam suaves, seguras e escaláveis. Minha missão é integrar as melhores práticas DevOps para impulsionar o desenvolvimento e a entrega de software de forma eficaz.
