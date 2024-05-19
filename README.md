@@ -269,7 +269,7 @@ Neste repositório, você encontrará uma coleção de materiais relacionados a 
 ### Diagrama Profissão Engenheiro de Plataforma
 
 - 📷 **Diagrama:** ![Diagrama Profissão Engenheiro de Plataforma](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/maxresdefault.jpg)
-# Certificados e Treinamentos em DevOps de Elias Andrade
+# Certificados e Treinamentos em DevOps 
 
 ## 📚 Certificados e Treinamentos
 
