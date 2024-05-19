@@ -26,29 +26,29 @@ jobs:
 
       - name: Log in to ArgoCD
         run: |
-          argocd login --plaintext --insecure --username ${{ secrets.ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }} --grpc-web ${{ secrets.ARGOCD_HOST }}
+          argocd login --plaintext --insecure --username ${{ secrets.ANONYMOUS_USERNAME }} --password ${{ secrets.ANONYMOUS_PASSWORD }} --grpc-web ${{ secrets.ANONYMOUS_HOST }}
 
       - name: Get Docker Registry Credentials
         run: |
-          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          echo "${{ secrets.ANONYMOUS_DOCKER_PASSWORD }}" | docker login -u ${{ secrets.ANONYMOUS_DOCKER_USERNAME }} --password-stdin
           
       - name: Fetch Secret for DigitalOcean Kubernetes
         run: |
-          doctl auth init --access-token ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-          kubectl create secret generic digitalocean --from-literal=token=${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          doctl auth init --access-token ${{ secrets.ANONYMOUS_DIGITALOCEAN_ACCESS_TOKEN }}
+          kubectl create secret generic digitalocean --from-literal=token=${{ secrets.ANONYMOUS_DIGITALOCEAN_ACCESS_TOKEN }}
 
       - name: Set Context for Kubernetes
         run: |
-          kubectl config set-context digitalocean --namespace=${{ secrets.K8S_NAMESPACE }} --cluster=${{ secrets.K8S_CLUSTER }} --user=${{ secrets.K8S_USER }}
+          kubectl config set-context digitalocean --namespace=${{ secrets.ANONYMOUS_K8S_NAMESPACE }} --cluster=${{ secrets.ANONYMOUS_K8S_CLUSTER }} --user=${{ secrets.ANONYMOUS_K8S_USER }}
           kubectl config use-context digitalocean
 
       - name: Deploy to ArgoCD
         run: |
           argocd app create my-app \
-            --repo ${{ secrets.ARGOCD_REPO_URL }} \
+            --repo ${{ secrets.ANONYMOUS_ARGOCD_REPO_URL }} \
             --path path/to/app \
             --dest-server https://kubernetes.default.svc \
-            --dest-namespace ${{ secrets.K8S_NAMESPACE }} \
+            --dest-namespace ${{ secrets.ANONYMOUS_K8S_NAMESPACE }} \
             --sync-policy automated \
             --auto-prune \
             --self-heal
