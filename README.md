@@ -2,6 +2,10 @@
 
 ![Elias Andrade - Profile Picture](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_kpuiYlsq9Q.png)
 
+### Portfólio de Infraestrutura 2024
+📁 Infra-2024: Este repositório contém projetos, scripts e documentações relacionadas ao meu portfólio de Infraestrutura em 2024. Aqui você encontrará uma variedade de trabalhos, desde administração de redes e sistemas Linux até políticas de segurança e automação de processos.
+
+Para exemplos de certificações, veja também o repositório [Certificações](https://github.com/chaos4455/Certifica-es), onde mantenho registros detalhados das minhas conquistas e certificações na área de infraestrutura.
 
 ## Let's Connect!
 - 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
