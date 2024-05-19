@@ -48,9 +48,6 @@ Sou especialista em Docker, gerenciando clusters e orquestrando contêineres par
 🔍 Monitoramento e Análise de Métricas 🔍
 
 Desenvolvo e implemento soluções avançadas de monitoramento utilizando Prometheus, Grafana, Loki e Zabbix. Isso permite uma análise profunda de métricas, garantindo o desempenho, a disponibilidade e a confiabilidade dos sistemas em tempo real.
-<!-- Imagem do Cluster no Grafana -->
-
-![Cluster no Grafana](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/grafanacluster.png)
 
 ⚙️ Automação e CI/CD ⚙️
 
@@ -272,6 +269,89 @@ Neste repositório, você encontrará uma coleção de materiais relacionados a 
 ### Diagrama Profissão Engenheiro de Plataforma
 
 - 📷 **Diagrama:** ![Diagrama Profissão Engenheiro de Plataforma](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/maxresdefault.jpg)
+
+# Certificados e Treinamentos em DevOps de Elias Andrade
+
+## 📚 Certificados e Treinamentos
+
+### 1. Acesso Remoto a Máquinas Linux
+![Certificado Acesso Remoto a Máquinas Linux](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/3EC3CA9E.pdf)
+- **Descrição:** Curso focado em técnicas avançadas de acesso remoto a sistemas Linux, melhorando a eficiência na administração de infraestruturas distribuídas.
+
+### 2. Arquitetura de Banco de Dados
+![Certificado Arquitetura de Banco de Dados](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/5170035E%20(2).pdf)
+- **Descrição:** Capacitação em projetar e otimizar arquiteturas de bancos de dados, essencial para implementações escaláveis e seguras em ambientes corporativos.
+
+### 3. Kubernetes Overview
+![Certificado Kubernetes Overview](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/801MBRAL.pdf)
+- **Descrição:** Introdução abrangente ao Kubernetes, incluindo conceitos fundamentais de orquestração de contêineres, preparando para adoção de microserviços e escalabilidade.
+
+### 4. Introdução a Bancos de Dados Relacionais
+![Certificado Introdução a Bancos de Dados Relacionais](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/803A3DA9.pdf)
+- **Descrição:** Fundamentos teóricos e práticos de bancos de dados relacionais, essencial para a administração e desenvolvimento de sistemas de alta disponibilidade.
+
+### 5. Gerenciamento de Disco Linux
+![Certificado Gerenciamento de Disco Linux](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/BCW3XBC1.pdf)
+- **Descrição:** Técnicas avançadas para gerenciamento eficiente de armazenamento em sistemas Linux, garantindo segurança e desempenho em ambientes críticos.
+
+### 6. Trabalho em Equipes Ágeis Agile
+![Certificado Trabalho em Equipes Ágeis Agile](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/C12C16DF%20(2).pdf)
+- **Descrição:** Treinamento em metodologias ágeis, promovendo colaboração eficaz e entrega contínua de valor em projetos de desenvolvimento de software.
+
+### 7. Introdução ao DevOps
+![Certificado Introdução ao DevOps](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/E9WZYGMH.pdf)
+- **Descrição:** Visão abrangente sobre práticas e cultura DevOps, integrando desenvolvimento e operações para acelerar ciclos de entrega e melhorar a qualidade do software.
+
+### 8. DevOps e Processo de Desenvolvimento de Software
+![Certificado DevOps e Processo de Desenvolvimento de Software](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/I50R918K.pdf)
+- **Descrição:** Curso focado em otimizar processos de desenvolvimento de software com práticas DevOps, aplicando automação e integração contínua para maximizar eficiência.
+
+### 9. Onboarding DevOps
+![Certificado Onboarding DevOps](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/K98MXD3C.pdf)
+- **Descrição:** Treinamento prático para integração de novos membros em equipes DevOps, garantindo rápida adaptação e alinhamento com os objetivos do projeto.
+
+### 10. Conceitos Básicos sobre Pods e Kubernetes
+![Certificado Conceitos Básicos sobre Pods e Kubernetes](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/KHBAI6HP.pdf)
+- **Descrição:** Fundamentos essenciais sobre Kubernetes e conceitos de orquestração de contêineres, facilitando a criação e gerenciamento de ambientes escaláveis e resilientes.
+
+### 11. GitLab - Conceitos Básicos
+![Certificado GitLab - Conceitos Básicos](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/KKKVO1JP.pdf)
+- **Descrição:** Capacitação em GitLab para controle de versionamento e automação de pipelines de CI/CD, melhorando a eficiência no desenvolvimento e deploy de software.
+
+### 12. Ambiente de Desenvolvimento com Kubernetes
+![Certificado Ambiente de Desenvolvimento com Kubernetes](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/ROIE6IAK.pdf)
+- **Descrição:** Curso prático para configuração de ambientes de desenvolvimento utilizando Kubernetes, promovendo a padronização e reprodutibilidade em ciclos de desenvolvimento.
+
+### 13. IT Governança de TI
+![Certificado IT Governança de TI](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/UC-00da4df3-fcd4-4e9e-a22b-bfbd417c598e.pdf)
+- **Descrição:** Conhecimentos fundamentais em governança de TI, essencial para alinhar estratégias de tecnologia com objetivos organizacionais e garantir conformidade.
+
+### 14. Gestão de Risco da Informação
+![Certificado Gestão de Risco da Informação](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/UC-35716f6d-0012-4985-87df-646f8953d654.pdf)
+- **Descrição:** Estratégias e práticas para identificação, avaliação e mitigação de riscos de segurança da informação, crucial para proteção de dados e continuidade de negócios.
+
+### 15. Microsoft Azure - Infraestrutura
+![Certificado Microsoft Azure - Infraestrutura](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/UC-7e5e5646-212f-4a5d-9389-42c8138871dc.pdf)
+- **Descrição:** Capacitação em infraestrutura na plataforma Microsoft Azure, incluindo implantação e gerenciamento de recursos em nuvem para suportar aplicações escaláveis e seguras.
+
+### 16. Cluster com Kubernetes em Nuvem
+![Certificado Cluster com Kubernetes em Nuvem](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/UVSIE2VE.pdf)
+- **Descrição:** Implementação e administração de clusters Kubernetes na nuvem, permitindo escalabilidade e alta disponibilidade para aplicações distribuídas e modernas.
+
+### 17. Criando Imagens Personalizadas com Docker
+![Certificado Criando Imagens Personalizadas com Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/WGR4QB7U.pdf)
+- **Descrição:** Técnicas avançadas para criação e gerenciamento de imagens Docker personalizadas, facilitando o desenvolvimento e deploy de aplicações em ambientes containerizados.
+
+---
+
+## 🚀 Como Estes Cursos Agregam às Minhas Práticas em DevOps
+
+Cada um desses cursos e treinamentos contribui diretamente para minha expertise em DevOps, melhorando minha capacidade de:
+- **Automatizar processos:** Utilizando ferramentas como Kubernetes, GitLab e Docker para automação de CI/CD e gerenciamento de contêineres.
+- **Otimizar infraestruturas:** Implementando melhores práticas em gerenciamento de banco de dados, segurança da informação e governança de TI.
+- **Facilitar integração e entrega contínua:** Compreendendo metodologias ágeis e integrando práticas DevOps nos processos de desenvolvimento de software.
+
+Esses certificados não apenas validam minhas habilidades técnicas, mas também demonstram meu compromisso contínuo com a aprendizagem e aprimoramento em tecnologias
 
 
 ### Outros repositórios mais antigos de quando comecei meus estudos em devops no ano de 2018
