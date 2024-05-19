@@ -99,11 +99,6 @@ Para uma visão mais detalhada sobre como a automação é configurada, você po
 
 ![Automação de Deploy no Argo via GitHub Actions](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_Nu8ifskwKv.png?raw=true)
 
-<!-- Print de Sucesso em uma Automação do GitHub Action para Buildar Imagem do Docker -->
-
-![Sucesso em Automatização do GitHub Action para Buildar Imagem do Docker](https://raw.githubusercontent.com/elias-andrade-devops/Elias-Andrade-Devops-2024/main/chrome_mLHk4d46Ey.png)
-
-
 🔄 Scaling e Alta Disponibilidade 🔄
 
 Implemento soluções de escalabilidade automática e alta disponibilidade, garantindo que os sistemas permaneçam resilientes mesmo em momentos de pico de tráfego. Utilizo práticas como autoscaling e clustering para manter a estabilidade e o desempenho dos serviços.
