@@ -1,4 +1,4 @@
-name: Build and push Docker image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -38,16 +38,14 @@ jobs:
       - name: Deploy to Staging
         if: github.ref == 'refs/heads/develop'
         run: |
-          curl -X POST https://staging.example.com/deploy \
-          -H 'Content-Type: application/json' \
-          -d '{"image": "${{ secrets.REGISTRY_URL }}/my-image:${{ github.sha }}"}'
+          echo "Deploying to staging environment..."
+          # Replace with actual deployment command to staging
 
       - name: Deploy to Production
         if: github.ref_type == 'tag'
         run: |
-          curl -X POST https://production.example.com/deploy \
-          -H 'Content-Type: application/json' \
-          -d '{"image": "${{ secrets.REGISTRY_URL }}/my-image:${{ github.sha }}", "version": "${{ github.ref }}" }'
+          echo "Deploying to production environment..."
+          # Replace with actual deployment command to production
 
       - name: Update Kubernetes Deployment
         if: github.ref_type == 'tag'
@@ -57,7 +55,8 @@ jobs:
           username: ${{ secrets.K8S_USERNAME }}
           password: ${{ secrets.K8S_PASSWORD }}
           script: |
-            kubectl set image deployment/my-app my-app=${{ secrets.REGISTRY_URL }}/my-image:${{ github.sha }}
+            echo "Updating Kubernetes deployment..."
+            # Replace with actual Kubernetes deployment update command
 
       - name: Notify Slack
         if: always()
