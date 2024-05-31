@@ -59,6 +59,56 @@ Sou especialista em Docker, gerenciando clusters e orquestrando contêineres par
 
 ![Baleia do Docker](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/_5b2c4b4f-8113-4978-832d-8dd46f144f00.jpeg?raw=true)
 
+![Monitoramento no Grafana de um cluster Kubernetes](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_slTszErKBZ.png)
+
+ℹ️ **Contexto:**
+Configurei e gerencio o monitoramento de um cluster Kubernetes utilizando Grafana, garantindo 100% de disponibilidade dos serviços críticos. Este dashboard personalizado oferece insights precisos sobre o estado de recursos, pods, e integridade do sistema.
+
+📊 **Destaques:**
+- Visualização em tempo real de métricas de performance e utilização de recursos.
+- Alertas proativos para problemas potenciais, permitindo ações preventivas.
+- Suporte à tomada de decisões baseadas em dados para otimização contínua do cluster Kubernetes.
+
+![Diagrama de ambiente de microserviços Kubernetes](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_bDDRgDbQBK.png)
+
+ℹ️ **Descrição:**
+Arquitetei e implementei um ambiente de microserviços utilizando Kubernetes, destacando-se pela escalabilidade, eficiência e segurança. Este diagrama ilustra a infraestrutura distribuída e altamente disponível, suportando aplicações críticas para o negócio.
+
+🔧 **Componentes:**
+- Configuração de clusters Kubernetes multi-nó.
+- Orquestração de contêineres para maximizar a utilização de recursos.
+- Integração contínua e entrega automatizada (CI/CD) para implantação rápida e confiável de novos serviços.
+
+![Diagrama AWS com cloud híbrida e privada](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_1oc8r8PK9E.png)
+
+ℹ️ **Contexto:**
+Desenvolvi uma arquitetura de cloud híbrida e privada na AWS, integrando recursos locais e de nuvem para atender requisitos específicos de segurança e desempenho.
+
+🌐 **Características:**
+- Utilização de VPCs para isolamento e controle de acesso.
+- Implementação de VPNs para conectividade segura entre ambientes on-premise e a nuvem.
+- Estratégias de redundância e recuperação de desastres para garantir alta disponibilidade e resiliência operacional.
+
+![Administração de Pods do Kubernetes via K8Studio](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/K8Studio_vuxGyMb87S.png)
+
+ℹ️ **Descrição:**
+Utilizei a plataforma K8Studio para administrar e monitorar pods no Kubernetes de forma intuitiva e eficiente, simplificando a gestão de contêineres e serviços na infraestrutura.
+
+🔧 **Recursos:**
+- Visualização detalhada do estado dos pods e suas interações.
+- Monitoramento em tempo real de métricas de desempenho e saúde dos contêineres.
+- Automatização de operações com facilidade através de uma interface amigável.
+
+![Diagrama completo de um cluster Kubernetes](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/K8Studio_2oVxSGNGB2.png)
+
+ℹ️ **Contexto:**
+Elaborei este diagrama para representar de maneira abrangente a arquitetura de um cluster Kubernetes que gerencio, destacando seus componentes principais e interações.
+
+🌟 **Destaque:**
+- Cluster Kubernetes distribuído para escalabilidade horizontal e alta disponibilidade.
+- Configuração de serviços de rede para comunicação eficiente entre os nós.
+- Implementação de políticas de segurança e controle de acesso para proteger os recursos críticos.
+
 
 🔍 Monitoramento e Análise de Métricas 🔍
 
@@ -67,6 +117,17 @@ Desenvolvo e implemento soluções avançadas de monitoramento utilizando Promet
 ⚙️ Automação e CI/CD ⚙️
 
 Sou especialista em automação, utilizando ferramentas como Ansible e Puppet Bolt para configurar e gerenciar infraestrutura de forma eficiente e consistente. Implemento pipelines de CI/CD com Jenkins Pipeline, GitLab CI/CD e GitHub Actions, garantindo a integração contínua e a entrega contínua de software de alta qualidade.
+
+![GitHub Action para geração automática de documentação](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_vi9ewCa0Z0.png)
+
+ℹ️ **Descrição:**
+Implementei uma ação personalizada no GitHub para automatizar a geração de documentação de repositórios. Essa ação utiliza workflows YAML para criar e atualizar documentações conforme novos commits e pull requests são realizados.
+
+🚀 **Realizações:**
+- Redução significativa do tempo gasto na atualização manual de documentação.
+- Padronização e consistência na documentação de projetos.
+- Melhoria na acessibilidade e disponibilidade de informações atualizadas para a equipe e stakeholders.
+
 
 ## 🚀 Automação de Construção e Push de Imagem Docker
 
