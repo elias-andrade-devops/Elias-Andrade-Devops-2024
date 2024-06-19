@@ -7,6 +7,17 @@
 
 Para exemplos de aplicação de práticas, ferramentas econhecimentos, experiência e jornada profissional na área de infraestrutura, veja também o repositório [Portfólio - Analista de rede e infraestrutura](https://github.com/chaos4455/Certifica-es), onde mantenho registros detalhados das minhas conquistas e certificações na área de infraestrutura.
 
+## Projetos de Destaque em Automação e DevOps 06-2024🚀
+
+### AI-Infra-Automation-Toolbox 💡
+🌐 [Repo do projeto](https://github.com/seu-usuario/AI-Infra-Automation-Toolbox)
+
+Recentemente, tenho trabalhado intensamente no desenvolvimento do AI-Infra-Automation-Toolbox, um repositório que exemplifica meu compromisso com a automação ágil e eficiente de infraestrutura.
+
+- **Automatização de Provisionamento**: Utilizo Python para integrar inteligência artificial na geração automática de scripts de provisionamento em Terraform, acelerando significativamente o processo de deploy de ambientes e serviços.
+
+- **Flexibilidade e Escalabilidade**: Este projeto permite a criação rápida de scripts prontos ou quase prontos para deploy em diversas plataformas de nuvem, como AWS CloudFormation e serviços on-premise, adaptando-se às necessidades específicas de cada ambiente.
+
 ## Let's Connect!
 - 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
 - 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
