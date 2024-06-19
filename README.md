@@ -1,5 +1,11 @@
 # Portfolio de Elias Andrade - Analista de Infraestrutura e DevOps 🚀
 
+![GitHub repo size](https://img.shields.io/github/repo-size/elias-andrade-devops/Elias-Andrade-Devops-2024)
+![GitHub stars](https://img.shields.io/github/stars/elias-andrade-devops/Elias-Andrade-Devops-2024?style=social)
+![GitHub forks](https://img.shields.io/github/forks/elias-andrade-devops/Elias-Andrade-Devops-2024?style=social)
+![GitHub issues](https://img.shields.io/github/issues/elias-andrade-devops/Elias-Andrade-Devops-2024)
+![GitHub license](https://img.shields.io/github/license/elias-andrade-devops/Elias-Andrade-Devops-2024)
+
 ![Elias Andrade - Profile Picture](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/chrome_kpuiYlsq9Q.png)
 
 ### Portfólio de Infraestrutura 2024
