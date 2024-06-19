@@ -18,6 +18,18 @@ Recentemente, tenho trabalhado intensamente no desenvolvimento do AI-Infra-Autom
 
 - **Flexibilidade e Escalabilidade**: Este projeto permite a criação rápida de scripts prontos ou quase prontos para deploy em diversas plataformas de nuvem, como AWS CloudFormation e serviços on-premise, adaptando-se às necessidades específicas de cada ambiente.
 
+### Doc Generator AI 📚
+🌟 [Repo do projeto](https://github.com/seu-usuario/doc-generator-ai)
+
+Desenvolvi o Doc Generator AI como parte integrante de meu portfólio de DevOps, focado em automatizar a criação de documentação técnica detalhada usando inteligência artificial.
+
+- **Automação de Documentação**: Utilizo GitHub Actions para um ciclo completo de CI/CD, desde a geração até a atualização contínua de manuais técnicos.
+
+- **Aplicabilidade em Diversos Setores**: Esta solução é adaptável para atender as demandas específicas de documentação técnica em diferentes indústrias e áreas de negócio.
+
+---
+
+
 ## Let's Connect!
 - 📧 **Email:** [oeliasandrade@gmail.com](mailto:oeliasandrade@gmail.com)
 - 🔗 **LinkedIn:** [linkedin.com/elias-andrade-devops](https://www.linkedin.com/in/elias-andrade-21574b2b4/)
@@ -36,7 +48,6 @@ Este currículo abrange minhas habilidades e experiência como Administrador de 
 [![Currículo Analista DevOps GitOps CI/CD Docker GitHub Kubernetes ArgoCD Platform Engineer](https://img.shields.io/badge/Currículo-Analista_DevOps_GitOps_CI_CD_Docker_GitHub_Kubernetes_ArgoCD_Platform_Engineer-green)](https://github.com/elias-andrade-devops/Elias-Andrade-Devops-2024/blob/main/certificados/Elias%20Andrade%20-%20Administrador%20de%20redes%20e%20infraestrutura%20%20Analista%20Devops%20-%20Gitops%20%20Platform%20Engineer%20-%20Remoto.pdf)
 
 Este currículo destaca minha especialização como Analista DevOps com foco em GitOps, CI/CD, Docker, GitHub, Kubernetes, ArgoCD e plataformas de engenharia.
-
 
 ## Sobre Mim
 
